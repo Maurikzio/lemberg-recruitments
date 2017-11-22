@@ -1,0 +1,153 @@
+
+header{
+    // background: rgb(15, 204, 121);
+    background: url('../images/header/americanFootball2.jpg') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 9999;
+    
+    .container-fluid{
+        z-index: 2;
+        padding-left: 0;
+        // padding-right: 0;
+        // border: 3px solid orange;
+        padding: 0;
+        .banner{
+            z-index: 0;
+        }
+
+        .navbar{
+            background: rgba(12, 35, 53, 1);
+            padding-top: 0;
+            padding-bottom: 0;
+            width: 100%;
+            z-index: 9999;
+            font-family: 'Gentium Basic';
+            cursor: pointer;
+            .theLogo{                                
+                padding: 7px 7px; 
+                // background: red;
+                img{
+                    width: 30%;
+                }        
+            } 
+            button{
+                span{
+                    color: white;
+                }
+            }
+            .navbar-collapse{
+                justify-content: flex-end;
+                // background: green;
+                // padding: 0; 
+                .navbar-nav{ 
+                    // background: yellow;                 
+                    .nav-item{
+                        margin-left: 45px; //cambiar a 0 para pantallas pequenas
+                        // background: red;
+                        .nav-link{
+                            color: white;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 15px;
+                            border-bottom: 5px solid transparent;
+                            padding-top: 27px;
+                            padding-bottom: 26px;
+                            transition: all .5s linear;
+                        
+                            &:hover{
+                                border-bottom: 5px solid white;
+                                transition: .5s linear;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+            .headerContent{
+                // background: orange;
+                height: 88vh;
+                display: flex;
+                align-items: center;
+                // margin-left: 0;
+            // border: 2px dashed black;            
+                
+                
+                .mySlider{
+                    // position: relative;
+                    animation: none;
+                    // border: 1px solid red;
+                    align-items: center;
+                
+                    
+                            
+                    .carousel{
+                        // border: 1px dashed white;
+                        // padding: 10px 0 100px 0;
+                        // background: grey;
+                        
+                        position: relative;
+                        .carousel-inner{
+                            // border: 1px dashed red; 
+                                                       
+                            margin: 0;
+                            .carousel-item{
+                                .theSliderContent{
+                                    .slider-img{
+                                        // border: 2px dashed white;
+                                        margin: auto;                                        
+                                        img{
+                                            width: 100%;
+                                            height: 100%;
+                                            margin: auto;
+                                            // display: block;
+                                            // border: 2px dashed white;
+                                        }
+                                    }
+                                        .slider-info{
+
+                                            // margin-top: 20px;
+                                            // border: 2px dashed black;
+                                            // background: red;
+                                            padding-top: 40px;
+                                            h3{
+                                                font-family: 'Gentium Basic';
+                                                color: #ffffff;
+                                                font-size: 30px;
+                                                font-weight: 300;
+                                                span{
+                                                    color: #17daa3;
+                                                    letter-spacing: 0.75px;
+                                                }
+                                            }
+                                            p{
+                                                font-size: 18px;
+                                                opacity: 0.9;
+                                                font-weight: 300;
+                                            }
+
+                                        }
+                                    }
+                                
+                                .carousel-control-prev{
+                                    border: 1px dashed black;
+                                    justify-content: flex-start;
+                                    .carousel-control-prev-icon{
+                                        border: 1px dashed black;  
+                                    }
+                                }
+                                .carousel-control-next{
+                                    border: 1px dashed black; 
+                                    justify-content: flex-end;               
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        //}
+    }
+}

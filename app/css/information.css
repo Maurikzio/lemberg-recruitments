@@ -1,0 +1,32 @@
+.informationOut {
+  padding: 10px 0;
+}
+.informationOut .informationIn {
+  padding-top: 50px;
+}
+.informationOut .informationIn .row .whyStudy {
+  border: 1px dashed black;
+}
+.informationOut .informationIn .row .whyStudy h2 {
+  margin: 10px;
+  border: 1px dashed red;
+  font-size: 50px;
+  font-weight: 200;
+}
+.informationOut .informationIn .row .whyStudy p {
+  font-weight: 200;
+}
+.informationOut .informationIn .row .whyStudy p .openMore {
+  cursor: pointer;
+}
+.informationOut .informationIn .row .whyStudy p .more {
+  display: none;
+}
+.informationOut .informationIn .row .advantages {
+  border: 1px dashed white;
+  display: none;
+  font-weight: 200;
+}
+.informationOut .informationIn .row .advantages h2 {
+  font-weight: 200;
+}

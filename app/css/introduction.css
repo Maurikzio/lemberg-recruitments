@@ -1,0 +1,153 @@
+.introduction {
+  height: 100vh;
+}
+.introduction .introductionContent {
+  position: relative;
+}
+.introduction .introductionContent .introductionInfo {
+  background: rgba(27, 26, 26, 0);
+  color: white;
+  height: 100vh;
+}
+.introduction .introductionContent .introductionInfo h1 {
+  font-family: 'Roboto Condensed';
+  font-size: 70px;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.introduction .introductionContent .introductionInfo h2 {
+  font-family: 'Roboto Condensed';
+  font-size: 70px;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.introduction .introductionContent .introductionInfo p {
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  line-height: 30px;
+}
+.introduction .introductionContent .introductionInfo .theIntro {
+  color: white;
+  height: 100vh;
+  padding-top: 130px;
+  cursor: pointer;
+}
+.introduction .introductionContent .introductionInfo .theIntro:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.introduction .introductionContent .introductionInfo .theMission {
+  padding-top: 130px;
+  height: 100vh;
+}
+.introduction .introductionContent .introductionInfo .theMission:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.introduction .introductionContent .introductionImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  opacity: 1;
+}
+.introduction .introductionContent .introductionImg #theSlider,
+.introduction .introductionContent .introductionImg .wrap,
+.introduction .introductionContent .introductionImg .slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato';
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.introduction .introductionContent .introductionImg .wrap {
+  position: relative;
+  width: 100%;
+}
+.introduction .introductionContent .introductionImg .myOwnSlide {
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.introduction .introductionContent .introductionImg .slide1 {
+  background-image: url("../images/basketTeam.jpg");
+}
+.introduction .introductionContent .introductionImg .slide2 {
+  background-image: url("../images/header/basketBallons.jpg");
+}
+.introduction .introductionContent .introductionImg .slide3 {
+  background-image: url("../images/tennis1.jpg");
+}
+.introduction .introductionContent .introductionImg .slide-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.introduction .introductionContent .introductionImg .slide-content span {
+  font-size: 5rem;
+  color: white;
+}
+.introduction .introductionContent .introductionImg .arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.introduction .introductionContent .introductionImg #arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+.introduction .introductionContent .introductionImg #arrow-right {
+  border-width: 30px 0px 30px 40px;
+  border-color: transparent  transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+}
+@media (max-width: 576px) {
+  .introduction .introductionContent .introductionInfo {
+    padding-top: 0px;
+  }
+  .introduction .introductionContent .introductionInfo .theIntro h1 {
+    font-size: 20px;
+  }
+  .introduction .introductionContent .introductionInfo .theIntro p {
+    line-height: 15px;
+  }
+  .introduction .introductionContent .introductionInfo .theMission h2 {
+    font-size: 20px;
+  }
+  .introduction .introductionContent .introductionInfo .theMission p {
+    line-height: 15px;
+  }
+  .introduction .introductionContent .introductionInfo p {
+    font-size: 10px;
+  }
+}

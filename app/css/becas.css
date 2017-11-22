@@ -1,0 +1,180 @@
+.becas {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 200;
+  background: url('../images/trofeo.jpg') center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+}
+.becas .row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.becas .row .becasHeader h2 {
+  font-weight: 200;
+  font-size: 50px;
+  color: white;
+}
+.becas .row .posibilities {
+  border: 1px solid white;
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+}
+.becas .row .posibilities .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.becas .row .posibilities .row .ballon1 {
+  background: rgba(255, 255, 255, 0.9);
+  padding-top: 10px;
+  -webkit-border-top-left-radius: 24px;
+          border-top-left-radius: 24px;
+  -webkit-border-bottom-left-radius: 24px;
+          border-bottom-left-radius: 24px;
+}
+.becas .row .posibilities .row .ballon1 i {
+  padding: 30px 25px 35px 30px;
+}
+.becas .row .posibilities .row .posibilitiesInfo {
+  color: white;
+  font-weight: 400;
+  -webkit-border-top-right-radius: 24px;
+          border-top-right-radius: 24px;
+  -webkit-border-bottom-right-radius: 24px;
+          border-bottom-right-radius: 24px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.becas .row .posibilities .row .posibilitiesInfo:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.becas .row .posibilities .row .posibilitiesInfo h3 {
+  font-weight: 200;
+}
+.becas .row .definition {
+  border: 1px solid white;
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+}
+.becas .row .definition .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.becas .row .definition .row .ballon2 {
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-border-top-left-radius: 24px;
+          border-top-left-radius: 24px;
+  -webkit-border-bottom-left-radius: 24px;
+          border-bottom-left-radius: 24px;
+}
+.becas .row .definition .row .ballon2 i {
+  padding: 30px 25px;
+}
+.becas .row .definition .row .definitionInfo {
+  color: white;
+  font-weight: 400;
+  -webkit-border-top-right-radius: 24px;
+          border-top-right-radius: 24px;
+  -webkit-border-bottom-right-radius: 24px;
+          border-bottom-right-radius: 24px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.becas .row .definition .row .definitionInfo:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.becas .row .definition .row .definitionInfo h3 {
+  font-weight: 200;
+  margin-right: 50px;
+  text-align: left;
+}
+.becas .row .factors {
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+  border: 1px solid white;
+}
+.becas .row .factors .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.becas .row .factors .row .ballon3 {
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-border-top-left-radius: 24px;
+          border-top-left-radius: 24px;
+  -webkit-border-bottom-left-radius: 24px;
+          border-bottom-left-radius: 24px;
+}
+.becas .row .factors .row .ballon3 i {
+  background-color: #0c2335;
+  color: white;
+  font-weight: 200;
+}
+.becas .row .factors .row .factorsInfo {
+  cursor: pointer;
+  color: white;
+  -webkit-border-top-right-radius: 24px;
+          border-top-right-radius: 24px;
+  -webkit-border-bottom-right-radius: 24px;
+          border-bottom-right-radius: 24px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.becas .row .factors .row .factorsInfo:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.becas .row .factors .row .factorsInfo h3 {
+  font-weight: 200;
+}
+.becas .row .ballon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.becas .row .ballon i {
+  background-color: #0c2335;
+  padding: 30px 30px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  font-size: 75px;
+  text-align: center;
+  color: white;
+}

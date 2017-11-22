@@ -1,0 +1,144 @@
+.becas{
+    // height: 100vh;
+    // background: aqua;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 200; 
+    background: url('../images/trofeo.jpg') center;
+    background-size: cover;
+    background-repeat: no-repeat;                      
+    .row{
+        flex-direction: column;
+        .becasHeader{
+            h2{
+                font-weight: 200; 
+                font-size: 50px;
+                color: white;                       
+            }
+        }
+        .posibilities{
+            border: 1px solid white;
+            // background: rgba(255, 255, 255, .8);
+            border-radius: 24px;
+            .row{
+                flex-direction: row;
+                // background: orange;
+                .ballon1{
+                    background: rgba(255, 255, 255, .9);
+                    // background: white;
+                    padding-top: 10px;
+                    border-top-left-radius: 24px;
+                    border-bottom-left-radius: 24px;
+                    i{
+                        padding: 30px 25px 35px 30px;
+                     }
+                }
+                .posibilitiesInfo{
+                    // border: 1px dashed blue;
+                    // background: red;
+                    color: white;  
+                    font-weight: 400;
+                    // background: aqua;
+                    border-top-right-radius: 24px;
+                    border-bottom-right-radius: 24px;
+                    transition: all .5s ease-in-out;
+                    cursor: pointer;
+                    &:hover{
+                        background: rgba(255, 255, 255, .9);                    
+                        color: black;
+                        transition: .5s ease-in-out;
+                    }                                                               
+                    h3{
+                    font-weight: 200;                                            
+                    }
+                }
+            }
+        }
+        .definition{
+            // border: 1px dashed black;
+            // background: rgba(255, 255, 255, .8); 
+            border: 1px solid white;       
+            border-radius: 24px;            
+            .row{
+                flex-direction: row;
+                .ballon2{
+                    background: rgba(255, 255, 255, .9);                    
+                    border-top-left-radius: 24px;
+                    border-bottom-left-radius: 24px;
+                    i{
+                       padding: 30px 25px;
+                
+                    }
+                } 
+                .definitionInfo{
+                    color: white;  
+                    font-weight: 400;
+                    // background: aqua;
+                    border-top-right-radius: 24px;
+                    border-bottom-right-radius: 24px;
+                    transition: all .5s ease-in-out;
+                    cursor: pointer;
+                    &:hover{
+                        background: rgba(255, 255, 255, .9);                    
+                        color: black;
+                        transition: .5s ease-in-out;
+                    }                                                               
+                    h3{
+                    font-weight: 200;
+                    // background: red;
+                    margin-right: 50px;  
+                    text-align: left;                                          
+                    }
+                }
+            }
+        }
+        .factors{
+            // border: 1px dashed magenta;
+            // background: rgba(255, 255, 255, .8);  
+            border-radius: 24px;
+            border: 1px solid white;                      
+            .row{
+                flex-direction: row;                
+                .ballon3{
+                background: rgba(255, 255, 255, .9);  
+                    border-top-left-radius: 24px;
+                    border-bottom-left-radius: 24px;
+                    i{
+                        background-color: rgb(12, 35, 53);
+                        color: white;
+                        font-weight: 200;
+                    }
+                }
+                .factorsInfo{
+                    cursor: pointer;
+                    color: white;
+                    border-top-right-radius: 24px;
+                    border-bottom-right-radius: 24px;
+                    transition: all .5s ease-in-out;                    
+                    &:hover{
+                    background: rgba(255, 255, 255, .9);  
+                    color: black;
+                    transition: .5s ease-in-out;
+                    }
+                    h3{
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+        .ballon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                background-color: rgba(12, 35, 53, 1);            
+                padding: 30px 30px;
+                // display: inline-block;
+                border-radius: 100%;
+                font-size: 75px;
+                text-align: center;
+                color: white;
+            }
+        }
+    }
+}
