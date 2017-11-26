@@ -2,17 +2,13 @@
   padding-top: 30px;
   padding-bottom: 30px;
   font-weight: 200;
-  background: url('../images/trofeo.jpg') center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background: url('../images/tennisBackground2.jpg');
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
   background-repeat: no-repeat;
 }
 .becas .row {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  text-align: center;
 }
 .becas .row .becasHeader h2 {
   font-weight: 200;
@@ -20,30 +16,25 @@
   color: white;
 }
 .becas .row .posibilities {
-  border: 1px solid white;
   -webkit-border-radius: 24px;
           border-radius: 24px;
 }
 .becas .row .posibilities .row {
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .becas .row .posibilities .row .ballon1 {
-  background: rgba(255, 255, 255, 0.9);
   padding-top: 10px;
   -webkit-border-top-left-radius: 24px;
           border-top-left-radius: 24px;
   -webkit-border-bottom-left-radius: 24px;
           border-bottom-left-radius: 24px;
 }
-.becas .row .posibilities .row .ballon1 i {
-  padding: 30px 25px 35px 30px;
-}
 .becas .row .posibilities .row .posibilitiesInfo {
-  color: white;
+  color: black;
   font-weight: 400;
   -webkit-border-top-right-radius: 24px;
           border-top-right-radius: 24px;
@@ -52,42 +43,31 @@
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  cursor: pointer;
-}
-.becas .row .posibilities .row .posibilitiesInfo:hover {
-  background: rgba(255, 255, 255, 0.9);
-  color: black;
-  -webkit-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
 }
 .becas .row .posibilities .row .posibilitiesInfo h3 {
   font-weight: 200;
+  color: white;
+}
+.becas .row .posibilities .row .posibilitiesInfo #posibilitiesInfoDescription {
+  display: none;
+  color: white;
 }
 .becas .row .definition {
-  border: 1px solid white;
   -webkit-border-radius: 24px;
           border-radius: 24px;
 }
 .becas .row .definition .row {
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-.becas .row .definition .row .ballon2 {
-  background: rgba(255, 255, 255, 0.9);
-  -webkit-border-top-left-radius: 24px;
-          border-top-left-radius: 24px;
-  -webkit-border-bottom-left-radius: 24px;
-          border-bottom-left-radius: 24px;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .becas .row .definition .row .ballon2 i {
   padding: 30px 25px;
 }
 .becas .row .definition .row .definitionInfo {
-  color: white;
+  color: black;
   font-weight: 400;
   -webkit-border-top-right-radius: 24px;
           border-top-right-radius: 24px;
@@ -96,38 +76,25 @@
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  cursor: pointer;
-}
-.becas .row .definition .row .definitionInfo:hover {
-  background: rgba(255, 255, 255, 0.9);
-  color: black;
-  -webkit-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
 }
 .becas .row .definition .row .definitionInfo h3 {
   font-weight: 200;
-  margin-right: 50px;
-  text-align: left;
+  color: white;
+}
+.becas .row .definition .row .definitionInfo #definitioninfoDescription {
+  color: white;
+  display: none;
 }
 .becas .row .factors {
   -webkit-border-radius: 24px;
           border-radius: 24px;
-  border: 1px solid white;
 }
 .becas .row .factors .row {
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-.becas .row .factors .row .ballon3 {
-  background: rgba(255, 255, 255, 0.9);
-  -webkit-border-top-left-radius: 24px;
-          border-top-left-radius: 24px;
-  -webkit-border-bottom-left-radius: 24px;
-          border-bottom-left-radius: 24px;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .becas .row .factors .row .ballon3 i {
   background-color: #0c2335;
@@ -135,8 +102,7 @@
   font-weight: 200;
 }
 .becas .row .factors .row .factorsInfo {
-  cursor: pointer;
-  color: white;
+  color: black;
   -webkit-border-top-right-radius: 24px;
           border-top-right-radius: 24px;
   -webkit-border-bottom-right-radius: 24px;
@@ -145,15 +111,13 @@
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.becas .row .factors .row .factorsInfo:hover {
-  background: rgba(255, 255, 255, 0.9);
-  color: black;
-  -webkit-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
 .becas .row .factors .row .factorsInfo h3 {
   font-weight: 200;
+  color: white;
+}
+.becas .row .factors .row .factorsInfo #factorInfoDescription {
+  color: white;
+  display: none;
 }
 .becas .row .ballon {
   display: -webkit-box;
@@ -168,6 +132,7 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 .becas .row .ballon i {
   background-color: #0c2335;

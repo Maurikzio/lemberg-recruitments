@@ -13,6 +13,7 @@ header .container-fluid {
   padding: 0;
 }
 header .container-fluid .banner {
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 header .container-fluid .navbar {
@@ -90,8 +91,8 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
   margin: auto;
 }
 header .container-fluid .headerContent .mySlider .carousel .carousel-inner .carousel-item .theSliderContent .slider-img img {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: auto;
   margin: auto;
 }
 header .container-fluid .headerContent .mySlider .carousel .carousel-inner .carousel-item .theSliderContent .slider-info {
@@ -104,13 +105,14 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
   font-weight: 300;
 }
 header .container-fluid .headerContent .mySlider .carousel .carousel-inner .carousel-item .theSliderContent .slider-info h3 span {
-  color: #17daa3;
+  color: #0c2335;
   letter-spacing: 0.75px;
 }
 header .container-fluid .headerContent .mySlider .carousel .carousel-inner .carousel-item .theSliderContent .slider-info p {
   font-size: 18px;
   opacity: 0.9;
   font-weight: 300;
+  color: white;
 }
 header .container-fluid .headerContent .mySlider .carousel .carousel-inner .carousel-item .carousel-control-prev {
   border: 1px dashed black;
@@ -262,6 +264,75 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
   right: 0;
   margin-right: 30px;
 }
+.ofIntro {
+  background: none;
+  height: auto;
+}
+.ofIntro .introRow {
+  margin-right: 0;
+}
+.ofIntro .introRow .theIntroduction {
+  background: url('../images/tennis1.jpg') center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 86vh;
+  text-align: center;
+  color: white;
+  padding-left: 150px;
+  padding-right: 150px;
+  position: relative;
+}
+.ofIntro .introRow .theIntroduction .introContent {
+  position: relative;
+  z-index: 2;
+  padding-top: 50px;
+}
+.ofIntro .introRow .theIntroduction .introContent h1 {
+  font-size: 100px;
+}
+.ofIntro .introRow .theIntroduction .introContent p {
+  font-size: 25px;
+}
+.ofIntro .introRow .theIntroduction .introBanner {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.ofIntro .introRow .theMission {
+  background: url('../images/header/basketBallons.jpg') center no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 100vh;
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  position: relative;
+}
+.ofIntro .introRow .theMission .introContent {
+  position: relative;
+  z-index: 2;
+  padding-top: 130px;
+  color: white;
+}
+.ofIntro .introRow .theMission .introContent h2 {
+  font-size: 100px;
+}
+.ofIntro .introRow .theMission .introContent p {
+  font-size: 25px;
+}
+.ofIntro .introRow .theMission .missionBanner {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
 @media (max-width: 576px) {
   .introduction .introductionContent .introductionInfo {
     padding-top: 0px;
@@ -284,51 +355,55 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
 }
 .informationOut {
   padding: 10px 0;
+  background: url('../images/gordo.jpg') center no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: relative;
 }
 .informationOut .informationIn {
   padding-top: 50px;
-}
-.informationOut .informationIn .row .whyStudy {
-  border: 1px dashed black;
+  padding-bottom: 50px;
+  color: white;
+  position: relative;
 }
 .informationOut .informationIn .row .whyStudy h2 {
   margin: 10px;
-  border: 1px dashed red;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 200;
 }
 .informationOut .informationIn .row .whyStudy p {
   font-weight: 200;
-}
-.informationOut .informationIn .row .whyStudy p .openMore {
-  cursor: pointer;
-}
-.informationOut .informationIn .row .whyStudy p .more {
-  display: none;
+  font-size: 18px;
 }
 .informationOut .informationIn .row .advantages {
-  border: 1px dashed white;
-  display: none;
   font-weight: 200;
 }
 .informationOut .informationIn .row .advantages h2 {
   font-weight: 200;
+  font-size: 40px;
+}
+.informationOut .informationIn .row .advantages ul {
+  font-size: 18px;
+}
+.informationOut .bannerInfo {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .becas {
   padding-top: 30px;
   padding-bottom: 30px;
   font-weight: 200;
-  background: url('../images/trofeo.jpg') center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background: url('../images/tennisBackground2.jpg');
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
   background-repeat: no-repeat;
 }
 .becas .row {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  text-align: center;
 }
 .becas .row .becasHeader h2 {
   font-weight: 200;
@@ -336,30 +411,25 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
   color: white;
 }
 .becas .row .posibilities {
-  border: 1px solid white;
   -webkit-border-radius: 24px;
           border-radius: 24px;
 }
 .becas .row .posibilities .row {
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .becas .row .posibilities .row .ballon1 {
-  background: rgba(255, 255, 255, 0.9);
   padding-top: 10px;
   -webkit-border-top-left-radius: 24px;
           border-top-left-radius: 24px;
   -webkit-border-bottom-left-radius: 24px;
           border-bottom-left-radius: 24px;
 }
-.becas .row .posibilities .row .ballon1 i {
-  padding: 30px 25px 35px 30px;
-}
 .becas .row .posibilities .row .posibilitiesInfo {
-  color: white;
+  color: black;
   font-weight: 400;
   -webkit-border-top-right-radius: 24px;
           border-top-right-radius: 24px;
@@ -368,42 +438,31 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  cursor: pointer;
-}
-.becas .row .posibilities .row .posibilitiesInfo:hover {
-  background: rgba(255, 255, 255, 0.9);
-  color: black;
-  -webkit-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
 }
 .becas .row .posibilities .row .posibilitiesInfo h3 {
   font-weight: 200;
+  color: white;
+}
+.becas .row .posibilities .row .posibilitiesInfo #posibilitiesInfoDescription {
+  display: none;
+  color: white;
 }
 .becas .row .definition {
-  border: 1px solid white;
   -webkit-border-radius: 24px;
           border-radius: 24px;
 }
 .becas .row .definition .row {
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-.becas .row .definition .row .ballon2 {
-  background: rgba(255, 255, 255, 0.9);
-  -webkit-border-top-left-radius: 24px;
-          border-top-left-radius: 24px;
-  -webkit-border-bottom-left-radius: 24px;
-          border-bottom-left-radius: 24px;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .becas .row .definition .row .ballon2 i {
   padding: 30px 25px;
 }
 .becas .row .definition .row .definitionInfo {
-  color: white;
+  color: black;
   font-weight: 400;
   -webkit-border-top-right-radius: 24px;
           border-top-right-radius: 24px;
@@ -412,38 +471,25 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  cursor: pointer;
-}
-.becas .row .definition .row .definitionInfo:hover {
-  background: rgba(255, 255, 255, 0.9);
-  color: black;
-  -webkit-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
 }
 .becas .row .definition .row .definitionInfo h3 {
   font-weight: 200;
-  margin-right: 50px;
-  text-align: left;
+  color: white;
+}
+.becas .row .definition .row .definitionInfo #definitioninfoDescription {
+  color: white;
+  display: none;
 }
 .becas .row .factors {
   -webkit-border-radius: 24px;
           border-radius: 24px;
-  border: 1px solid white;
 }
 .becas .row .factors .row {
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-.becas .row .factors .row .ballon3 {
-  background: rgba(255, 255, 255, 0.9);
-  -webkit-border-top-left-radius: 24px;
-          border-top-left-radius: 24px;
-  -webkit-border-bottom-left-radius: 24px;
-          border-bottom-left-radius: 24px;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .becas .row .factors .row .ballon3 i {
   background-color: #0c2335;
@@ -451,8 +497,7 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
   font-weight: 200;
 }
 .becas .row .factors .row .factorsInfo {
-  cursor: pointer;
-  color: white;
+  color: black;
   -webkit-border-top-right-radius: 24px;
           border-top-right-radius: 24px;
   -webkit-border-bottom-right-radius: 24px;
@@ -461,15 +506,13 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.becas .row .factors .row .factorsInfo:hover {
-  background: rgba(255, 255, 255, 0.9);
-  color: black;
-  -webkit-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
 .becas .row .factors .row .factorsInfo h3 {
   font-weight: 200;
+  color: white;
+}
+.becas .row .factors .row .factorsInfo #factorInfoDescription {
+  color: white;
+  display: none;
 }
 .becas .row .ballon {
   display: -webkit-box;
@@ -484,6 +527,7 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 .becas .row .ballon i {
   background-color: #0c2335;

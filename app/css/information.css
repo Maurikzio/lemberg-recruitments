@@ -1,32 +1,40 @@
 .informationOut {
   padding: 10px 0;
+  background: url('../images/gordo.jpg') center no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: relative;
 }
 .informationOut .informationIn {
   padding-top: 50px;
-}
-.informationOut .informationIn .row .whyStudy {
-  border: 1px dashed black;
+  padding-bottom: 50px;
+  color: white;
+  position: relative;
 }
 .informationOut .informationIn .row .whyStudy h2 {
   margin: 10px;
-  border: 1px dashed red;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 200;
 }
 .informationOut .informationIn .row .whyStudy p {
   font-weight: 200;
-}
-.informationOut .informationIn .row .whyStudy p .openMore {
-  cursor: pointer;
-}
-.informationOut .informationIn .row .whyStudy p .more {
-  display: none;
+  font-size: 18px;
 }
 .informationOut .informationIn .row .advantages {
-  border: 1px dashed white;
-  display: none;
   font-weight: 200;
 }
 .informationOut .informationIn .row .advantages h2 {
   font-weight: 200;
+  font-size: 40px;
+}
+.informationOut .informationIn .row .advantages ul {
+  font-size: 18px;
+}
+.informationOut .bannerInfo {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }

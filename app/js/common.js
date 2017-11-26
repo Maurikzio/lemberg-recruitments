@@ -56,12 +56,6 @@ function findLocationOf(theElementId){
 
 window.onscroll = function(){
     let theWindowScroll = window.scrollY;
-    // console.log('the scroll is:' + theWindowScroll);
-
-    // if(theWindowScroll === findLocationOf('theContactSection')){
-    //     writing('Cheer Up!');
-    // }
-
 }
 
 
@@ -69,13 +63,55 @@ window.onscroll = function(){
 function showit(elemIdentifier){
     $(elemIdentifier).toggle();
 }
-let showFunctor = document.getElementById('toShow');
-let clickMe = document.getElementById('clickHere');
+// let showFunctor = document.getElementById('toShow');
+// let clickMe = document.getElementById('clickHere');
+let bolita1 = document.getElementById('bolita1');
+let bolita2 = document.getElementById('bolita2');
+let bolita3 = document.getElementById('bolita3');
 
-clickMe.onclick = function(){
-    showit('#toShow');
-    showit('.advantages');
+// clickMe.onclick = function(){
+//     showit('#toShow');
+//     showit('.advantages');
+    
+// };
+
+let myDes = document.getElementById('posibilitiesInfoDescription');
+let defDes = document.getElementById('definitioninfoDescription');
+let factorDes = document.getElementById('factorInfoDescription');
+
+bolita1.onmouseover = function(){
+    myDes.style.display = 'block';
 };
+bolita1.onmouseout = function(){
+    myDes.style.display = 'none';
+};
+bolita1.onclick = function(){
+    showit('#posibilitiesInfoDescription');
+};
+
+bolita2.onmouseover = function(){
+    defDes.style.display = 'block';
+};
+bolita2.onmouseout = function(){
+    defDes.style.display = 'none';
+};
+bolita2.onclick = function(){
+    showit('#definitioninfoDescription');
+};
+
+bolita3.onmouseover = function(){
+    factorDes.style.display = 'block';
+};
+bolita3.onmouseout = function(){
+    factorDes.style.display = 'none';
+};
+bolita3.onclick = function(){
+    showit('#factorInfoDescription');
+};
+
+
+
+
 
 
 //primer slideshow images 
@@ -106,5 +142,5 @@ function slideRight(){
         current = -1;
     }
 }
-startSlide(); 
-myFunction();
+// startSlide(); 
+// myFunction();

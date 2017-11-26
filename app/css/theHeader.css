@@ -13,6 +13,7 @@ header .container-fluid {
   padding: 0;
 }
 header .container-fluid .banner {
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 header .container-fluid .navbar {
@@ -90,8 +91,8 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
   margin: auto;
 }
 header .container-fluid .headerContent .mySlider .carousel .carousel-inner .carousel-item .theSliderContent .slider-img img {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: auto;
   margin: auto;
 }
 header .container-fluid .headerContent .mySlider .carousel .carousel-inner .carousel-item .theSliderContent .slider-info {
@@ -104,13 +105,14 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
   font-weight: 300;
 }
 header .container-fluid .headerContent .mySlider .carousel .carousel-inner .carousel-item .theSliderContent .slider-info h3 span {
-  color: #17daa3;
+  color: #0c2335;
   letter-spacing: 0.75px;
 }
 header .container-fluid .headerContent .mySlider .carousel .carousel-inner .carousel-item .theSliderContent .slider-info p {
   font-size: 18px;
   opacity: 0.9;
   font-weight: 300;
+  color: white;
 }
 header .container-fluid .headerContent .mySlider .carousel .carousel-inner .carousel-item .carousel-control-prev {
   border: 1px dashed black;
