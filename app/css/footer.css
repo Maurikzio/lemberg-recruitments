@@ -1,0 +1,80 @@
+footer {
+  background: #1f1f27;
+  color: white;
+}
+footer .quicklyLinks ul {
+  list-style: none;
+  padding: 20px 0 20px 0;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .quicklyLinks ul li a {
+  padding-right: 30px;
+  padding-left: 30px;
+  color: white;
+}
+footer .quicklyLinks ul li a:hover {
+  text-decoration: none;
+}
+footer .beInTouch ul {
+  list-style: none;
+  padding: 0;
+  padding-bottom: 0;
+}
+footer .beInTouch ul li {
+  padding-bottom: 0;
+}
+footer .beInTouch ul li .theNumber {
+  padding-left: 3px;
+  padding-top: 3px;
+  padding-right: 0;
+}
+footer .beInTouch ul li .theNumber p {
+  margin-bottom: 0;
+}
+footer .followUs ul {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+footer .followUs ul li {
+  padding-right: 30px;
+  font-size: 25px;
+}
+footer .followUs ul li i {
+  background: #106fff;
+  cursor: pointer;
+  padding: 10px 15px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+footer .followUs ul li i:hover {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+footer .followUs ul li .fa-instagram {
+  padding: 10px 12px;
+  background: #f5306c;
+}
+footer .followUs ul li .fa-skype {
+  padding: 10px 12px;
+  background: #2ca3d8;
+}
