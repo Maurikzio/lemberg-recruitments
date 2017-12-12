@@ -31,19 +31,19 @@ $(document).ready(function(){
     })
 });
 
-(function writing (str) {
-    document.getElementById('writeHere').innerHTML = " ";        
-    let arrFromStr = str.split('');
-    let i = 0;
-    let printStr = setInterval(function(){
-        document.getElementById('writeHere').innerHTML += arrFromStr[i];
-      //document.body.innerHTML += arrFromStr[i];
-      i++;
-      if(i === arrFromStr.length){
-          clearInterval(printStr);
-      }
-    },300);  
-  })('Cheer Up!');
+// (function writing (str) {
+//     document.getElementById('writeHere').innerHTML = " ";        
+//     let arrFromStr = str.split('');
+//     let i = 0;
+//     let printStr = setInterval(function(){
+//         document.getElementById('writeHere').innerHTML += arrFromStr[i];
+//       //document.body.innerHTML += arrFromStr[i];
+//       i++;
+//       if(i === arrFromStr.length){
+//           clearInterval(printStr);
+//       }
+//     },300);  
+//   })("Let's Get Started Now!");
 
   //writing('Cheer Up!');
 

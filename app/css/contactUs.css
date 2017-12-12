@@ -25,7 +25,7 @@
   z-index: 5;
 }
 .contactUs .cheerUp .cheerUp-Content h2 {
-  font-size: 150px;
+  font-size: 100px;
   font-weight: 200;
   color: white;
   text-align: center;
@@ -54,6 +54,7 @@
           border-radius: 0;
   border-bottom: 1px solid #6f6f74;
   padding-left: 0;
+  color: white;
 }
 .contactUs .theForm form .formInfo .form-group input::-webkit-input-placeholder {
   color: white;

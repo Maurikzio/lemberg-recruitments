@@ -69,30 +69,15 @@
                                     <div class="row theSliderContent">
 
                                         <div class="col-4 slider-img text-center">
-                                            <img class="" src="images/theLogo.png" alt="First slide">
+                                            <img class="redLine" src="images/logos/bily222.png" alt="First slide">
                                         </div>
 
-                                        <div class="slider-info text-center col-12">
+                                        <!-- <div class="slider-info text-center col-12">
                                             <h3><span>Alect </span> lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
                                             <p>Panchito, CEO&Founder at symu.co</p>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
-
-                                <div class="col-12 carousel-item">
-                                    <div class="row theSliderContent">
-
-                                        <div class="col-4 slider-img text-center">
-                                            <img class="" src="images/thelogo2.png" alt="First slide">
-                                        </div>
-
-                                        <div class="slider-info text-center col-12">
-                                            <h3><span>Alecto </span> lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
-                                            <p>Pedrito, CEO&Founder at symu.co</p>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                             <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -370,16 +355,16 @@
         <div class="row">
             <div class="col-12 cheerUp">
                 <div class="cheerUp-Content">
-                    <h2 id="writeHere">Animate</h2>            
+                    <h2 id="writeHere">Let's Get Started Now.</h2>            
                 </div>
                 <div class="cheerUp-banner"></div>                
             </div>
         </div>
         <div class="container">
         <div class="row theForm">
-            <form action="" class="col-12">
+            <form action="" class="col-12" id="contactForm">
                 <div class="row">
-                    <div class="formInfo col-5">
+                    <div class="formInfo col-5 ">
                         <h2>Write us</h2>
                         <div class="form-group">
                             <label for="theName">Name</label>
@@ -389,6 +374,10 @@
                             <label for="theEmail">Email</label>
                             <input type="email" name="" id="theEmail" class="form-control" placeholder="youremail@domain.com">
                             <small class="form-text">We'll never share your mail with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="thePhone">Phone number</label>
+                            <input type="text" name="" id="thePhone" class="form-control" placeholder="phone number here">
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
@@ -401,9 +390,8 @@
                         <div class="form-group">
                             <label for="theMessage">Message</label>
                             <textarea name="" id="theMessage" cols="30" rows="10" class="form-control">Write text here...</textarea>
-                            
                         </div>
-                        <button>send message</button>
+                        <button type="submit" class="theSender">send message</button>
                     </div>
                 </div>
             </form>
@@ -411,65 +399,6 @@
     </div>
     </section>
 
-    <!-- <section class="botones container my-4">
-            <div class="divBtn"></div>
-            <br><br><br>
-            
-            <div class="newBtn"></div>
-            <br><br><br>
-            
-            <button>click me</button>
-            <br><br><br>
-            <div class="col-10 dividido">
-                <div class="image">
-
-                </div>
-                <div class="info">
-
-                </div>
-            </div>
-    </section> -->
-    
-
-    <!-- testing section -->
-    <!-- <section class="container test">
-        <h1>testing flex box</h1>
-            <div class="test-row row">
-                <div class="first col"><h1>1</h1></div>
-                <div class="second col"><h1>2</h1></div>
-                <div class="third col"><h1>3</h1></div>
-            </div>
-    </section>-->
-    
-    <!-- <section class="container mine">
-        <div class="row inner">
-
-        <div class="content-sec col">
-            <div class="pricing-block">
-                <h1>the best plan</h1>
-                <p>a little text for desription</p>
-                <button>sign up now</button>
-            </div>
-            <div class="pricing-block awesome-plan">
-                <h1>the best plan</h1>
-                <p>a little text for desription</p>
-                <div class="theButton">
-                    <button>sign up now</button>
-                </div>
-            </div>
-            <div class="pricing-block">
-                <h1>the best plan</h1>
-                <div class="desc">
-                    <p>a little text for desription</p>
-                </div>
-                <div class="theButton">
-                    <button>sign up now</button>
-                </div>
-            </div>
-        </div>
-
-        </div>
-    </section> -->
     <footer class="container-fluid">
         <div class="row">
             <div class="col-12 quicklyLinks">
@@ -478,15 +407,15 @@
                     <li><a href="">About Us</a></li>
                     <li><a href="">FAQ</a></li>
                 </ul>
-
             </div>
             <div class="col-12">
                 <div class="row">
                     <div class="col-4 firstBlock">
                         <p>Lemberg <br/> Recruitments</p>
+                        <p>Todos los derechos reservados 2017</p>                        
                     </div>
                     <div class="col-4 beInTouch">
-                        <h4>Contact Us</h4>
+                        <h4 class="pb-3">Contact Us</h4>
                         
                         <ul class="row contactList">
                             <li class="col-6">
@@ -519,7 +448,7 @@
                         
                     </div>
                     <div class="col-4 followUs">
-                        <h4>Follow Us:</h4>
+                        <h4 class="pb-3">Follow Us:</h4>
                         <ul>
                             <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
                             <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
@@ -538,7 +467,9 @@
     <script src="js/owl.carousel.min.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>    
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>    
     <script src="js/common.js"></script>   
+    <script src="js/conexion.js"></script>
 
 </body>
 </html>

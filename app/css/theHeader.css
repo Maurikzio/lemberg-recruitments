@@ -95,6 +95,9 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
   height: auto;
   margin: auto;
 }
+header .container-fluid .headerContent .mySlider .carousel .carousel-inner .carousel-item .theSliderContent .slider-img .redLine {
+  width: 100%;
+}
 header .container-fluid .headerContent .mySlider .carousel .carousel-inner .carousel-item .theSliderContent .slider-info {
   padding-top: 40px;
 }

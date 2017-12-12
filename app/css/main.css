@@ -95,6 +95,9 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
   height: auto;
   margin: auto;
 }
+header .container-fluid .headerContent .mySlider .carousel .carousel-inner .carousel-item .theSliderContent .slider-img .redLine {
+  width: 100%;
+}
 header .container-fluid .headerContent .mySlider .carousel .carousel-inner .carousel-item .theSliderContent .slider-info {
   padding-top: 40px;
 }
@@ -603,7 +606,7 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
   z-index: 5;
 }
 .contactUs .cheerUp .cheerUp-Content h2 {
-  font-size: 150px;
+  font-size: 100px;
   font-weight: 200;
   color: white;
   text-align: center;
@@ -632,6 +635,7 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
           border-radius: 0;
   border-bottom: 1px solid #6f6f74;
   padding-left: 0;
+  color: white;
 }
 .contactUs .theForm form .formInfo .form-group input::-webkit-input-placeholder {
   color: white;
@@ -793,11 +797,12 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
 footer {
   background: #1f1f27;
   color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 footer .quicklyLinks ul {
   list-style: none;
   padding: 20px 0 20px 0;
-  border: 1px solid white;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
