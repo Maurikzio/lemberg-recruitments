@@ -23,7 +23,7 @@
             <!-- <div class="row">        -->
                 <nav class="navbar navbar-expand-md navbar-light">
                     <div class="col-4 col-sm-2 theLogo">
-                        <img src="app/images/logos/bily.png" alt="lemberg recruitment logo" class="img-fluid">
+                        <a href="index.html"><img src="app/images/logos/bily.png" alt="lemberg recruitment logo" class="img-fluid"></a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -31,19 +31,19 @@
                     <div class="collapse navbar-collapse col-12 col-sm-10  text-center" id="navbarNav">
                         <ul class="navbar-nav text-center">
                             <li class="nav-item active ">
-                                <a class="nav-link" href="#">home<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.html">home<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="app/intro.html" target="_blank">about us</a>
+                                <a class="nav-link" href="app/intro.html" target="">about us</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="app/process.html">process</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">faq</a>
+                                <a class="nav-link" href="#faq">faq</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">contact us</a>
+                                <a class="nav-link" href="#theContactSection">contact us</a>
                             </li>
                         </ul>
                     </div>
@@ -65,19 +65,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 carousel-item">
-                                    <div class="row theSliderContent">
-
-                                        <div class="col-4 slider-img text-center">
-                                            <img class="redLine" src="app/images/logos/bily222.png" alt="First slide">
-                                        </div>
-
-                                        <!-- <div class="slider-info text-center col-12">
-                                            <h3><span>Alect </span> lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
-                                            <p>Panchito, CEO&Founder at symu.co</p>
-                                        </div> -->
-                                    </div>
-                                </div>
                             </div>
                             <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -93,6 +80,54 @@
             </div>
         <!-- </div>   -->
     </header>
+
+    <!-- <section class="introduction container-fluid">
+        <div class="row introductionContent">
+            <div class="col-12 col-md-12 introductionInfo">
+                <div class="row">
+                <div class="theIntro col-12 col-md-6">
+                    <h1>Introduction</h1>
+                    <p>
+                        El estudiar y competir en las mejores ligas deportivas universitarias está al alcance de tus manos.
+                        Estados unidos ofrece una gran variedad de oportunidades a deportistas de todo el mundo no solo para competir dentro de las ligas universitarias, sino también para obtener una educación de calidad, por lo que muchas universidades ofrecen programas que permiten combinar deporte y estudio por medio de Becas académicas y deportivas. 
+                        Muchas de las mejores universidades de Estados Unidos reciben jóvenes talentos cada año, cabe recalcar que algunos de los mejores deportistas de todo mundo como Michael Jordan, Tiger Woods, Jhon Isner, Shaquille O´Neal, Alex Morgan y muchos más han tenido su formación académica y deportiva por medio de becas dentro de instituciones universitarias, y al finalizar sus años académicos han dado el salto al mundo deportivo como jugadores profesionales.                            
+                    </p>
+                </div>
+                <div class="theMission col-12 col-md-6">
+                <h2>Mision</h2>
+                    <p>
+                        Lemberg Recruitment ofrece un programa de promoción dentro de las diferentes universidades de Estados Unidos para Jóvenes deportistas que buscan vivir una nueva experiencia dentro del ámbito deportivo y académico 
+                    </p>
+                    <p>
+                        Nuestra estrategia es promover a los jóvenes deportistas en la mayor cantidad de universidades como nos sea posible, atravez  de un plan estratégico sistematizado que permita desarrollar y mostrar todas sus habilidades tanto deportivas como académicas a los diferentes entrenadores de las universidades y de esta manera conseguir las mejores opciones de becas posibles.
+                    </p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-12 introductionImg ">
+                <div class="wrap">
+                        <div id="theSlider">
+                            <div class="myOwnSlide slide1">
+                                <div class="slide-content">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="myOwnSlide slide2">
+                                <div class="slide-content">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="myOwnSlide slide3">
+                                <div class="slide-content">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section> -->
 
     <section class="informationOut container-fluid">
         <div class="bannerInfo"></div>
@@ -216,7 +251,7 @@
     </section>
 
 
-    <section class="questions container-fluid ">
+    <section class="questions container-fluid" id="faq">
         <div class="banner"></div>
         <div class="questionsContent container">
 
@@ -306,49 +341,107 @@
     <section class="contactUs container-fluid" id="theContactSection">
         <div class="row">
             <div class="col-12 cheerUp">
-                <div class="cheerUp-Content">
-                    <h2 id="writeHere">Let's Get Started Now.</h2>            
+                <div class="cheerUp-Content text-center">
+                    <h2 id="writeHere">Let's Get Started Now.</h2> 
+                    <button type="button" class="" data-toggle="modal" data-target="#myModal">
+                        <img src="app/images/theEnvelop.png" alt="" class="">
+                        <p>Write us</p>
+                    </button>                    
                 </div>
                 <div class="cheerUp-banner"></div>                
             </div>
         </div>
-        <div class="container">
-        <div class="row theForm">
-            <form action="" class="col-12" id="contactForm">
-                <div class="row">
-                    <div class="formInfo col-5 ">
-                        <h2>Write us</h2>
-                        <div class="form-group">
-                            <label for="theName">Name</label>
-                            <input type="text" name="" id="theName" class="form-control" placeholder="example name">
+        <!-- <div class="container">
+            <div class="row theForm">
+                <form action="" class="col-12" id="contactForm">
+                    <div class="row">
+                        <div class="formInfo col-5 ">
+                            <h2>Write us</h2>
+                            <div class="form-group">
+                                <label for="theName">Name</label>
+                                <input type="text" name="" id="theName" class="form-control" placeholder="example name">
+                            </div>
+                            <div class="form-group">
+                                <label for="theEmail">Email</label>
+                                <input type="email" name="" id="theEmail" class="form-control" placeholder="youremail@domain.com">
+                                <small class="form-text">We'll never share your mail with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="thePhone">Phone number</label>
+                                <input type="text" name="" id="thePhone" class="form-control" placeholder="phone number here">
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    i am not a robot
+                                </label>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="theEmail">Email</label>
-                            <input type="email" name="" id="theEmail" class="form-control" placeholder="youremail@domain.com">
-                            <small class="form-text">We'll never share your mail with anyone else.</small>
-                        </div>
-                        <div class="form-group">
-                            <label for="thePhone">Phone number</label>
-                            <input type="text" name="" id="thePhone" class="form-control" placeholder="phone number here">
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input">
-                                i am not a robot
-                            </label>
+                        <div class="formContent col-7">
+                            <div class="form-group">
+                                <label for="theMessage">Message</label>
+                                <textarea name="" id="theMessage" cols="30" rows="10" class="form-control">Write text here...</textarea>
+                            </div>
+                            <button type="submit" class="theSender">send message</button>
                         </div>
                     </div>
-                    <div class="formContent col-7">
-                        <div class="form-group">
-                            <label for="theMessage">Message</label>
-                            <textarea name="" id="theMessage" cols="30" rows="10" class="form-control">Write text here...</textarea>
-                        </div>
-                        <button type="submit" class="theSender">send message</button>
+                </form>
+            </div>
+        </div> -->
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <!-- <div class="modal-header"> -->
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                    <!-- <h4 class="modal-title">Modal Header</h4> -->
+                    <!-- </div> -->
+                    <div class="modal-body">
+                        <form action="" class="col-12" id="contactForm">
+                                <div class="row">
+                                    <div class="formInfo col-5 ">
+                                        <h2>Write us</h2>
+                                        <div class="form-group">
+                                            <label for="theName">Name</label>
+                                            <input type="text" name="" id="theName" class="form-control" placeholder="example name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="theEmail">Email</label>
+                                            <input type="email" name="" id="theEmail" class="form-control" placeholder="youremail@domain.com">
+                                            <small class="form-text">We'll never share your mail with anyone else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="thePhone">Phone number</label>
+                                            <input type="text" name="" id="thePhone" class="form-control" placeholder="phone number here">
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input">
+                                                i am not a robot
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="formContent col-7">
+                                        <div class="form-group">
+                                            <label for="theMessage">Message</label>
+                                            <textarea name="" id="theMessage" cols="30" rows="10" class="form-control">Write text here...</textarea>
+                                        </div>
+                                        <button type="submit" class="theSender">send message</button>
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-            </form>
+                
+                </div>
+            </div>
         </div>
-    </div>
     </section>
 
     <footer class="container-fluid">
@@ -416,7 +509,7 @@
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script src="js/bootstrap.min.js"></script> -->
-    <script src="app/js/owl.carousel.min.js"></script>    
+    <script src="js/owl.carousel.min.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>    
     <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>    
