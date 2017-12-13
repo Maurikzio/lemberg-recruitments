@@ -636,7 +636,7 @@ header .container-fluid .headerContent .mySlider .carousel .carousel-inner .caro
   margin-top: 20px;
 }
 .contactUs .modal {
-  margin: 120px;
+  margin-top: 120px;
 }
 .contactUs .modal-body {
   background: #1f1f27;
