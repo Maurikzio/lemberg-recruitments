@@ -1,5 +1,4 @@
 .contactUs {
-  padding-bottom: 50px;
   background: url('../images/why.jpg') center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -8,7 +7,7 @@
 .contactUs .cheerUp {
   -webkit-background-size: cover;
           background-size: cover;
-  padding: 100px 0;
+  padding: 200px 0;
   position: relative;
 }
 .contactUs .cheerUp .cheerUp-banner {
@@ -31,23 +30,47 @@
   text-align: center;
   z-index: 99999;
 }
-.contactUs .theForm {
-  background: #1f1f27;
-  padding-top: 50px;
-  padding-left: 50px;
-  margin-top: 50px;
+.contactUs .cheerUp .cheerUp-Content button {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
 }
-.contactUs .theForm form {
+.contactUs .cheerUp .cheerUp-Content button:hover img {
+  border-bottom: 4px solid #ccc;
+}
+.contactUs .cheerUp .cheerUp-Content button img {
+  padding-bottom: 10px;
+  width: 30%;
+  border-bottom: 4px solid transparent;
+}
+.contactUs .cheerUp .cheerUp-Content button p {
+  padding-left: 15px;
+  margin-top: 20px;
+}
+.contactUs .modal {
+  margin: 120px;
+}
+.contactUs .modal-body {
+  background: #1f1f27;
+}
+.contactUs .modal-body form {
   color: white;
   background: #1f1f27;
 }
-.contactUs .theForm form .formInfo {
+.contactUs .modal-body form .formInfo {
   padding-right: 50px;
 }
-.contactUs .theForm form .formInfo .form-group label {
+.contactUs .modal-body form .formInfo .form-group label {
   color: #6f6f74;
 }
-.contactUs .theForm form .formInfo .form-group input {
+.contactUs .modal-body form .formInfo .form-group input {
   background: none;
   border: none;
   -webkit-border-radius: 0;
@@ -56,41 +79,41 @@
   padding-left: 0;
   color: white;
 }
-.contactUs .theForm form .formInfo .form-group input::-webkit-input-placeholder {
+.contactUs .modal-body form .formInfo .form-group input::-webkit-input-placeholder {
   color: white;
 }
-.contactUs .theForm form .formInfo .form-group input::-moz-placeholder {
+.contactUs .modal-body form .formInfo .form-group input::-moz-placeholder {
   color: white;
 }
-.contactUs .theForm form .formInfo .form-group input:-ms-input-placeholder {
+.contactUs .modal-body form .formInfo .form-group input:-ms-input-placeholder {
   color: white;
 }
-.contactUs .theForm form .formInfo .form-group input::-ms-input-placeholder {
+.contactUs .modal-body form .formInfo .form-group input::-ms-input-placeholder {
   color: white;
 }
-.contactUs .theForm form .formInfo .form-group input::placeholder {
+.contactUs .modal-body form .formInfo .form-group input::placeholder {
   color: white;
 }
-.contactUs .theForm form .formInfo .form-check input {
+.contactUs .modal-body form .formInfo .form-check input {
   background: red;
 }
-.contactUs .theForm form .formContent {
+.contactUs .modal-body form .formContent {
   padding-left: 0px;
   padding-right: 0px;
 }
-.contactUs .theForm form .formContent .form-group {
+.contactUs .modal-body form .formContent .form-group {
   padding-left: 15px;
   padding-right: 15px;
   border-left: 1px solid #ffffff;
 }
-.contactUs .theForm form .formContent .form-group textarea {
+.contactUs .modal-body form .formContent .form-group textarea {
   border: none;
   -webkit-border-radius: 0;
           border-radius: 0;
   background: none;
   color: white;
 }
-.contactUs .theForm form .formContent button {
+.contactUs .modal-body form .formContent button {
   background: #f97000;
   border: none;
   width: 100%;

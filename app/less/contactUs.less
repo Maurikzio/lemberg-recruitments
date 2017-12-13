@@ -1,7 +1,7 @@
 .contactUs{
     // background: orange;
     // padding: 100px 15px;
-    padding-bottom: 50px;
+    // padding-bottom: 5px;
     // background: red;
     background: url('../images/why.jpg') center no-repeat;
     background-size: cover;
@@ -9,7 +9,7 @@
     .cheerUp{
         // background: url('../images/why.jpg') no-repeat;
         background-size: cover;
-        padding: 100px 0;
+        padding: 200px 0;
         position: relative;
         .cheerUp-banner{
             background: rgba(0, 0, 0, .7);
@@ -31,14 +31,39 @@
                 text-align: center;
                 z-index: 99999;
             }
+            button{
+                font-size: 30px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                color: white;
+                display: flex;
+                margin: auto;
+                &:hover img{
+                    border-bottom: 4px solid #ccc;
+                }
+                img{
+                    padding-bottom: 10px;
+                    width: 30%;
+                    border-bottom: 4px solid transparent;                    
+                }
+                p{
+                    // background: red;
+                    padding-left: 15px;
+                    margin-top: 20px;
+                }
+            }
         }
     }
-    .theForm{
+    .modal{
+        margin: 120px;
+    }
+    .modal-body{
         // background: red;
         background: rgb(31, 31, 39); 
-        padding-top: 50px;
-        padding-left: 50px;
-        margin-top: 50px;       
+        // padding-top: 50px;
+        // padding-left: 50px;
+        // margin-top: 50px;       
         form{
             color: white;
             background: rgb(31, 31, 39);
