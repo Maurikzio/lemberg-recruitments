@@ -8,7 +8,7 @@
   padding: 75px 0;
 }
 .questions .banner {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.3);
 }
 .questions .questionsContent .questionsHeader {
   color: black;
@@ -91,6 +91,7 @@
 }
 .questions .questionsContent .questionsList .questionItem .questionInfo p {
   padding-right: 10px;
+  font-size: 18px;
 }
 .questions .questionsContent .questionsList .questionItem:nth-child(even) {
   -webkit-box-orient: horizontal;

@@ -1,4 +1,3 @@
-
 header{
     // background: rgb(15, 204, 121);
     background: url('../images/header/americanFootball2.jpg') center center;
@@ -10,27 +9,22 @@ header{
     
     .container-fluid{
         z-index: 2;
-        padding-left: 0;
-        // padding-right: 0;
-        // border: 3px solid orange;
-        padding: 0;
         .banner{
-            background: rgba(0, 0, 0, .5);
+            background: rgba(0, 0, 0, .3);
             z-index: 0;
         }
 
         .navbar{
-            // background: rgba(12, 35, 53, 1);
             background: rgb(31, 31, 39);            
-            padding-top: 0;
-            padding-bottom: 0;
+            padding: 0;
             width: 100%;
             z-index: 9999;
             font-family: 'Gentium Basic';
+            // background: red;
+        
             cursor: pointer;
             .theLogo{                                
                 padding: 7px 7px; 
-                // background: red;
                 img{
                     width: 30%;
                 }        
@@ -42,13 +36,9 @@ header{
             }
             .navbar-collapse{
                 justify-content: flex-end;
-                // background: green;
-                // padding: 0; 
-                .navbar-nav{ 
-                    // background: yellow;                 
+                .navbar-nav{                  
                     .nav-item{
                         margin-left: 45px; //cambiar a 0 para pantallas pequenas
-                        // background: red;
                         .nav-link{
                             color: white;
                             text-transform: uppercase;
@@ -69,94 +59,27 @@ header{
                 }
             }
         }
-            .headerContent{
-                // background: orange;
-                height: 88vh;
-                display: flex;
-                align-items: center;
-                // margin-left: 0;
-            // border: 2px dashed black;            
-                
-                
-                .mySlider{
-                    // position: relative;
-                    animation: none;
-                    // border: 1px solid red;
-                    align-items: center;
-                
-                    
-                            
-                    .carousel{
-                        // border: 1px dashed white;
-                        // padding: 10px 0 100px 0;
-                        // background: grey;
-                        
-                        position: relative;
-                        .carousel-inner{
-                            // border: 1px dashed red; 
-                                                       
-                            margin: 0;
-                            .carousel-item{
-                                .theSliderContent{
-                                    .slider-img{
-                                        // border: 2px solid red;
-                                        
-                                        margin: auto;                                        
-                                        img{
-                                            width: 70%;
-                                            height: auto;
-                                            margin: auto;
-                                            // display: block;
-                                            // border: 2px dashed white;
-                                        }
-                                        .redLine{
+            .header-content{
+                padding-top: 50px;
 
-                                            width: 100%;
-                                        }
-                                    }
-                                        .slider-info{
-
-                                            // margin-top: 20px;
-                                            // border: 2px dashed black;
-                                            // background: red;
-                                            padding-top: 40px;
-                                            h3{
-                                                font-family: 'Gentium Basic';
-                                                color: #ffffff;
-                                                font-size: 30px;
-                                                font-weight: 300;
-                                                span{
-                                                    color: rgba(12, 35, 53, 1);
-                                                    letter-spacing: 0.75px;
-                                                }
-                                            }
-                                            p{
-                                                font-size: 18px;
-                                                opacity: 0.9;
-                                                font-weight: 300;
-                                                color: white;
-                                            }
-
-                                        }
-                                    }
-                                
-                                .carousel-control-prev{
-                                    border: 1px dashed black;
-                                    justify-content: flex-start;
-                                    .carousel-control-prev-icon{
-                                        border: 1px dashed black;  
-                                    }
-                                }
-                                .carousel-control-next{
-                                    border: 1px dashed black; 
-                                    justify-content: flex-end;               
-                                }
-                            }
-                        }
+                .header-content-img{
+                    padding: 0;
+                    img{
+                        margin-bottom: 0;                    
+                    }
+                }
+                .header-content-info{
+                    h3{
+                        color: white;
+                        font-size: 35px;
+                        margin-top: 20px;
+                    }
+                    p{
+                        color: white;
+                        font-size: 20px;
                     }
                 }
             }
-        //}
     }
 }
 

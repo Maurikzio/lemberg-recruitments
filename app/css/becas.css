@@ -2,10 +2,20 @@
   padding-top: 30px;
   padding-bottom: 30px;
   font-weight: 200;
-  background: url('../images/tennisBackground2.jpg');
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
+  color: #0c2335;
+  background: url('../images/swim.jpg');
+  -webkit-background-size: cover;
+          background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+}
+.becas .bannerBecas {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 .becas .row {
   text-align: center;
