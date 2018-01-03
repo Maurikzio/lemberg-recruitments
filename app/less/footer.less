@@ -1,32 +1,30 @@
 footer{
-    background: rgb(31, 31, 39);
+    // background: rgb(31, 31, 39);
+    background-image: url("../images/soccerPole.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: white;
-    padding-top: 20px;
+    padding-top: 200px;
     padding-bottom: 20px;
-    .quicklyLinks{
-        ul{
-            list-style: none;
-            padding: 20px 0 20px 0;
-            // border:  1px solid white;
-            display: flex;
-            justify-content: center;
-            li{
-                // background: red;
-                a{
-                    padding-right: 30px;                    
-                    padding-left: 30px;
-                    color: white;
-                    &:hover{
-                        text-decoration: none;
-                    }
-                }
-
+    position: relative;
+    .firstBlock{
+        // background: red;
+        text-align: center;
+        margin-bottom: 30px;
+        p{
+            // background: green;
+            font-size: 60px;
+            i{
+                cursor: pointer;
             }
         }
     }
     .beInTouch{
         // background: red;
+        text-align: center;
         ul{
+            
             list-style: none;
             padding: 0;
             // border: 1px solid black;
@@ -34,38 +32,40 @@ footer{
             li{
                 // border: 1px solid white;
                 padding-bottom: 0;
-                .theImg{
+                // background: pink;
+                p{
                     // background: green;
+                    margin-bottom: 0;
+                    margin-left: 10px;
+                    display: inline-block;
                 }
-                .theNumber{
-                    // background: orange;
-                    padding-left: 3px;
-                    padding-top: 3px;
-                    padding-right: 0;
-                    p{
-                        // background: green;
-                        margin-bottom: 0;
-                    }
+                &:before{
+                    content: "\f098";
+                    font-family: 'fontawesome';
+                    font-size: 18px
                 }
+                
             }
         }
     }
     .followUs{
         // background: red;
+        text-align: center;
         ul{
             list-style: none;
             // border: 1px solid black;
-            padding: 0;
+            // padding: 0;
             display: flex;
-            justify-content: left;
+            justify-content: center;
             li{
                 padding-right: 30px;
                 // background: blue;
                 font-size: 25px;
                     // background: red;
                     i{
-                        background: rgb(16, 111, 255);                                               
+                        // background: rgb(16, 111, 255);                                               
                         cursor: pointer;
+                        border: 1px solid #ccc;
                         padding: 10px 15px;
                         transition: all .5s ease-in-out;                        
                         &:hover{
@@ -76,13 +76,21 @@ footer{
                     }
                     .fa-instagram{
                         padding: 10px 12px; 
-                        background: rgb(245, 48, 108);                       
+                        // background: rgb(245, 48, 108);                       
                         }
                     .fa-skype{
                         padding: 10px 12px;    
-                        background: rgb(44, 163, 216);                                                
+                        // background: rgb(44, 163, 216);                                                
                     }
             }
         }
+    }
+    .footerBanner{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(31, 31, 39, .6);
+        width: 100%;
+        height: 100%;
     }
 }

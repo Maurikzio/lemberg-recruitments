@@ -80,30 +80,30 @@ let defDes = document.getElementById('definitioninfoDescription');
 let factorDes = document.getElementById('factorInfoDescription');
 
 bolita1.onmouseover = function(){
-    myDes.style.display = 'block';
+    myDes.style.visibility = 'visible';
 };
 bolita1.onmouseout = function(){
-    myDes.style.display = 'none';
+    myDes.style.visibility = 'hidden';
 };
 bolita1.onclick = function(){
     showit('#posibilitiesInfoDescription');
 };
 
 bolita2.onmouseover = function(){
-    defDes.style.display = 'block';
+    defDes.style.visibility = 'visible';
 };
 bolita2.onmouseout = function(){
-    defDes.style.display = 'none';
+    defDes.style.visibility = 'hidden';
 };
 bolita2.onclick = function(){
     showit('#definitioninfoDescription');
 };
 
 bolita3.onmouseover = function(){
-    factorDes.style.display = 'block';
+    factorDes.style.visibility = 'visible';
 };
 bolita3.onmouseout = function(){
-    factorDes.style.display = 'none';
+    factorDes.style.visibility = 'hidden';
 };
 bolita3.onclick = function(){
     showit('#factorInfoDescription');

@@ -3,7 +3,7 @@
   padding-bottom: 30px;
   font-weight: 200;
   color: #0c2335;
-  background: url('../images/swim.jpg');
+  background: url('../images/tennessemin2.jpg');
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;
@@ -59,7 +59,7 @@
   color: white;
 }
 .becas .row .posibilities .row .posibilitiesInfo #posibilitiesInfoDescription {
-  display: none;
+  visibility: hidden;
   color: white;
 }
 .becas .row .definition {
@@ -93,7 +93,7 @@
 }
 .becas .row .definition .row .definitionInfo #definitioninfoDescription {
   color: white;
-  display: none;
+  visibility: hidden;
 }
 .becas .row .factors {
   -webkit-border-radius: 24px;
@@ -127,7 +127,7 @@
 }
 .becas .row .factors .row .factorsInfo #factorInfoDescription {
   color: white;
-  display: none;
+  visibility: hidden;
 }
 .becas .row .ballon {
   display: -webkit-box;

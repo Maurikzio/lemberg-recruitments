@@ -2,6 +2,9 @@
   background: none;
   height: auto;
 }
+.ofIntro .navbar {
+  width: 100%;
+}
 .ofIntro .introRow {
   margin-right: 0;
 }

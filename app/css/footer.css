@@ -1,28 +1,26 @@
 footer {
-  background: #1f1f27;
+  background-image: url("../images/soccerPole.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
   color: white;
-  padding-top: 20px;
+  padding-top: 200px;
   padding-bottom: 20px;
+  position: relative;
 }
-footer .quicklyLinks ul {
-  list-style: none;
-  padding: 20px 0 20px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+footer .firstBlock {
+  text-align: center;
+  margin-bottom: 30px;
 }
-footer .quicklyLinks ul li a {
-  padding-right: 30px;
-  padding-left: 30px;
-  color: white;
+footer .firstBlock p {
+  font-size: 60px;
 }
-footer .quicklyLinks ul li a:hover {
-  text-decoration: none;
+footer .firstBlock p i {
+  cursor: pointer;
+}
+footer .beInTouch {
+  text-align: center;
 }
 footer .beInTouch ul {
   list-style: none;
@@ -32,33 +30,37 @@ footer .beInTouch ul {
 footer .beInTouch ul li {
   padding-bottom: 0;
 }
-footer .beInTouch ul li .theNumber {
-  padding-left: 3px;
-  padding-top: 3px;
-  padding-right: 0;
-}
-footer .beInTouch ul li .theNumber p {
+footer .beInTouch ul li p {
   margin-bottom: 0;
+  margin-left: 10px;
+  display: inline-block;
+}
+footer .beInTouch ul li:before {
+  content: "\f098";
+  font-family: 'fontawesome';
+  font-size: 18px;
+}
+footer .followUs {
+  text-align: center;
 }
 footer .followUs ul {
   list-style: none;
-  padding: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-  -webkit-justify-content: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 footer .followUs ul li {
   padding-right: 30px;
   font-size: 25px;
 }
 footer .followUs ul li i {
-  background: #106fff;
   cursor: pointer;
+  border: 1px solid #ccc;
   padding: 10px 15px;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -73,9 +75,15 @@ footer .followUs ul li i:hover {
 }
 footer .followUs ul li .fa-instagram {
   padding: 10px 12px;
-  background: #f5306c;
 }
 footer .followUs ul li .fa-skype {
   padding: 10px 12px;
-  background: #2ca3d8;
+}
+footer .footerBanner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(31, 31, 39, 0.6);
+  width: 100%;
+  height: 100%;
 }
