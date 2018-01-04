@@ -17,7 +17,7 @@
   text-transform: uppercase;
   background: rgba(24, 24, 24, 0.8);
   padding-right: 30px;
-  line-height: 40px;
+  line-height: 60px;
   color: white;
   font-size: 60px;
   font-weight: 200;
@@ -52,24 +52,28 @@
   font-family: 'fontawesome';
   content: '\f080';
   font-size: 20px;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   display: block;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   background: #1f1f27;
   position: absolute;
-  top: -webkit-calc(20%);
-  top: calc(20%);
+  top: -webkit-calc(10%);
+  top: calc(10%);
   color: white;
   text-align: center;
-  padding-top: 5px;
-  right: -30px;
+  padding-top: 9px;
+  right: -10px;
   z-index: 88;
 }
 .process .processInfo .card .card-header {
   background: none;
   border: none;
+  padding-right: 50px;
+}
+.process .processInfo .card .card-body {
+  padding-right: 50px;
 }
 .process .processInfo .dSecond:after {
   font-family: 'fontawesome';

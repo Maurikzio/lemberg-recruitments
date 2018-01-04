@@ -144,3 +144,9 @@ function slideRight(){
 }
 // startSlide(); 
 // myFunction();
+
+
+function myScroll(go){
+    $('HTML, BODY').animate({ scrollTop: go }, 800);
+    return false;
+}

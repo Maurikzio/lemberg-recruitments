@@ -73,7 +73,7 @@ header .container-fluid .header-content .header-content-img img {
 }
 header .container-fluid .header-content .header-content-info h3 {
   color: white;
-  font-size: 35px;
+  font-size: 45px;
   margin-top: 20px;
 }
 header .container-fluid .header-content .header-content-info p {
@@ -262,7 +262,7 @@ header .container-fluid .header-content .header-content-info p {
 }
 .becas .bannerBecas {
   position: absolute;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 100%;
   left: 0;
@@ -562,7 +562,7 @@ header .container-fluid .header-content .header-content-info p {
   text-transform: uppercase;
   background: rgba(24, 24, 24, 0.8);
   padding-right: 30px;
-  line-height: 40px;
+  line-height: 60px;
   color: white;
   font-size: 60px;
   font-weight: 200;
@@ -597,24 +597,28 @@ header .container-fluid .header-content .header-content-info p {
   font-family: 'fontawesome';
   content: '\f080';
   font-size: 20px;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   display: block;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   background: #1f1f27;
   position: absolute;
-  top: -webkit-calc(20%);
-  top: calc(20%);
+  top: -webkit-calc(10%);
+  top: calc(10%);
   color: white;
   text-align: center;
-  padding-top: 5px;
-  right: -30px;
+  padding-top: 9px;
+  right: -10px;
   z-index: 88;
 }
 .process .processInfo .card .card-header {
   background: none;
   border: none;
+  padding-right: 50px;
+}
+.process .processInfo .card .card-body {
+  padding-right: 50px;
 }
 .process .processInfo .dSecond:after {
   font-family: 'fontawesome';
@@ -734,6 +738,34 @@ footer .footerBanner {
   background: rgba(31, 31, 39, 0.6);
   width: 100%;
   height: 100%;
+}
+footer .toUp {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  color: tomato;
+  font-size: 50px;
+  cursor: pointer;
+  -webkit-animation: bote 1s infinite;
+          animation: bote 1s infinite;
+}
+@-webkit-keyframes bote {
+  0% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 30px;
+  }
+}
+@keyframes bote {
+  0% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 30px;
+  }
 }
 body {
   font-family: 'Roboto Condensed';
