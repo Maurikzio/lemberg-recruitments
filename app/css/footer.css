@@ -115,3 +115,39 @@ footer .toUp {
     bottom: 30px;
   }
 }
+@media (max-width: 576px) {
+  footer {
+    padding-top: 5px;
+  }
+  footer .firstBlock {
+    margin-bottom: 0px;
+  }
+  footer .firstBlock p {
+    margin-bottom: 0px;
+  }
+  footer .theRights {
+    margin-top: 3px !important;
+  }
+  footer .toUp {
+    bottom: 5px;
+    right: 10pxpx;
+    -webkit-animation: bote2 1s infinite;
+            animation: bote2 1s infinite;
+  }
+  @-webkit-keyframes bote2 {
+    0% {
+      bottom: 5px;
+    }
+    100% {
+      bottom: 0px;
+    }
+  }
+  @keyframes bote2 {
+    0% {
+      bottom: 5px;
+    }
+    100% {
+      bottom: 0px;
+    }
+  }
+}

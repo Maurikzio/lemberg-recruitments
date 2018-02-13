@@ -120,7 +120,13 @@
   cursor: pointer;
 }
 @media (max-width: 576px) {
-  .cheerUp .cheerUp-Content h2 {
-    display: none;
+  .contactUs .cheerUp {
+    padding-bottom: 0px;
+  }
+  .contactUs .cheerUp .cheerUp-Content h2 {
+    font-size: 30px;
+  }
+  .contactUs .cheerUp .cheerUp-Content button {
+    margin: 15px auto;
   }
 }
