@@ -13,11 +13,11 @@ header .container-fluid {
   padding-right: 0px;
 }
 header .container-fluid .banner {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.1);
   z-index: 0;
 }
 header .container-fluid .navbar {
-  background: #1f1f27;
+  background: rgba(31, 31, 39, 0.5);
   padding: 0;
   width: 100%;
   z-index: 9999;
@@ -60,6 +60,16 @@ header .container-fluid .navbar .navbar-collapse .navbar-nav .nav-item .nav-link
   -webkit-transition: .5s linear;
   -o-transition: .5s linear;
   transition: .5s linear;
+}
+header .container-fluid .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
+  min-width: 9rem;
+  background: rgba(31, 31, 39, 0.5);
+}
+header .container-fluid .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  color: white;
+}
+header .container-fluid .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: rgba(31, 31, 39, 0.5);
 }
 header .container-fluid .header-content {
   padding-top: 50px;

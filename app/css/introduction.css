@@ -4,6 +4,7 @@
 }
 .ofIntro .navbar {
   width: 100%;
+  position: absolute;
 }
 .ofIntro .introRow {
   margin-right: 0;
@@ -15,6 +16,7 @@
   background-attachment: fixed;
   text-align: center;
   color: white;
+  padding-top: 100px;
   padding-left: 150px;
   padding-right: 150px;
   padding-bottom: 50px;
@@ -28,9 +30,16 @@
 }
 .ofIntro .introRow .theIntroduction .introContent h1 {
   font-size: 100px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .ofIntro .introRow .theIntroduction .introContent p {
   font-size: 25px;
+  background: rgba(0, 0, 0, 0.3);
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .ofIntro .introRow .theIntroduction .missionContent {
   position: relative;
@@ -41,43 +50,19 @@
 }
 .ofIntro .introRow .theIntroduction .missionContent h2 {
   font-size: 100px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .ofIntro .introRow .theIntroduction .missionContent p {
   font-size: 25px;
+  background: rgba(0, 0, 0, 0.3);
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .ofIntro .introRow .theIntroduction .introBanner {
-  background: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 1;
-}
-.ofIntro .introRow .theMission {
-  background: url('../images/header/basketBallons.jpg') center no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
-  height: 100vh;
-  text-align: center;
-  padding-left: 150px;
-  padding-right: 150px;
-  position: relative;
-}
-.ofIntro .introRow .theMission .introContent {
-  position: relative;
-  z-index: 2;
-  padding-top: 130px;
-  color: white;
-}
-.ofIntro .introRow .theMission .introContent h2 {
-  font-size: 100px;
-}
-.ofIntro .introRow .theMission .introContent p {
-  font-size: 25px;
-}
-.ofIntro .introRow .theMission .missionBanner {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   width: 100%;
   height: 100%;

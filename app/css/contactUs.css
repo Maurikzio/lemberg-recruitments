@@ -50,6 +50,10 @@
   margin-top: 20px;
   line-height: 25px;
 }
+.contactUs .cheerUp .cheerUp-Content button p a {
+  text-decoration: none;
+  color: white;
+}
 .contactUs .modal {
   margin-top: 120px;
 }

@@ -31,23 +31,6 @@ $(document).ready(function(){
     })
 });
 
-// (function writing (str) {
-//     document.getElementById('writeHere').innerHTML = " ";        
-//     let arrFromStr = str.split('');
-//     let i = 0;
-//     let printStr = setInterval(function(){
-//         document.getElementById('writeHere').innerHTML += arrFromStr[i];
-//       //document.body.innerHTML += arrFromStr[i];
-//       i++;
-//       if(i === arrFromStr.length){
-//           clearInterval(printStr);
-//       }
-//     },300);  
-//   })("Let's Get Started Now!");
-
-  //writing('Cheer Up!');
-
-//find the location of element on pixeles
 function findLocationOf(theElementId){
     let target = document.getElementById(theElementId);
     let pos = target.offsetTop;
@@ -80,30 +63,30 @@ let defDes = document.getElementById('definitioninfoDescription');
 let factorDes = document.getElementById('factorInfoDescription');
 
 bolita1.onmouseover = function(){
-    myDes.style.visibility = 'visible';
+    myDes.style.display="block";
 };
 bolita1.onmouseout = function(){
-    myDes.style.visibility = 'hidden';
+    myDes.style.display = 'none';
 };
 bolita1.onclick = function(){
     showit('#posibilitiesInfoDescription');
 };
 
 bolita2.onmouseover = function(){
-    defDes.style.visibility = 'visible';
+    defDes.style.display="block";
 };
 bolita2.onmouseout = function(){
-    defDes.style.visibility = 'hidden';
+    defDes.style.display = 'none';
 };
 bolita2.onclick = function(){
     showit('#definitioninfoDescription');
 };
 
 bolita3.onmouseover = function(){
-    factorDes.style.visibility = 'visible';
+    factorDes.style.display="block";
 };
 bolita3.onmouseout = function(){
-    factorDes.style.visibility = 'hidden';
+    factorDes.style.display = 'none';
 };
 bolita3.onclick = function(){
     showit('#factorInfoDescription');

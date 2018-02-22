@@ -1,43 +1,65 @@
 .informationOut {
-  padding: 10px 15px;
-  background: url('../images/tennis2.jpg') no-repeat;
+  padding: 0px 0px;
+  background: red;
+  background: url('../images/sports/tennis-back.jpg') center;
   -webkit-background-size: cover;
           background-size: cover;
+  background-attachment: fixed;
   position: relative;
 }
 .informationOut .informationIn {
   padding-top: 50px;
   padding-bottom: 50px;
   color: white;
-  position: relative;
+}
+.informationOut .informationIn .row .whyStudy {
+  text-align: center;
 }
 .informationOut .informationIn .row .whyStudy h2 {
   margin: 10px;
   font-size: 70px;
   font-weight: 200;
+  background: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
 }
-.informationOut .informationIn .row .whyStudy p {
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.5);
+.informationOut .informationIn .row .whyStudy .whyStudy-explanation {
+  padding: 10px 10px;
+  background: rgba(0, 0, 0, 0.7);
   font-size: 20px;
+  text-align: left;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 30px;
+  color: #EFEBE9;
 }
 .informationOut .informationIn .row .advantages {
   font-weight: 200;
+  text-align: center;
 }
 .informationOut .informationIn .row .advantages h2 {
   text-align: center;
   font-weight: 200;
   font-size: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .informationOut .informationIn .row .advantages ul {
   font-size: 20px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
+  text-align: left;
+  width: 75%;
+  margin: auto;
 }
 .informationOut .bannerInfo {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -47,16 +69,20 @@
 .informationOut .sports {
   color: white;
 }
-.informationOut .sports .sportsHeader {
+.informationOut .sports .row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.informationOut .sports .row .sportsHeader {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 25px;
 }
-.informationOut .sports .sportsList ul {
+.informationOut .sports .row .sportsList ul {
   list-style: none;
   padding: 0;
 }
-.informationOut .sports .sportsList ul li .sportName {
+.informationOut .sports .row .sportsList ul li .sportName {
   padding-left: 0;
   padding-top: 25px;
 }
