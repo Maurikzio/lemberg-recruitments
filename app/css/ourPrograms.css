@@ -1,0 +1,70 @@
+.ourPrograms {
+  margin-top: -100px;
+  padding-bottom: 50px;
+}
+.ourPrograms .program {
+  text-align: center;
+}
+.ourPrograms .program .the-city-name {
+  margin-top: 20px;
+}
+.ourPrograms .program .the-city-name p {
+  width: 140px;
+  font-size: 30px;
+  display: inline-block;
+  border-bottom: 4px solid #ff5123;
+}
+.ourPrograms .program .programPic {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  background: orange;
+  -webkit-background-size: cover;
+          background-size: cover;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 40px 2px #fff;
+          box-shadow: 0px 0px 40px 2px #fff;
+}
+.ourPrograms .program .programPic::before {
+  content: "apply";
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  padding-top: 35%;
+  font-size: 50px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  left: -100%;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.ourPrograms .program .programPic:hover::before {
+  cursor: pointer;
+  left: 0px;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.ourPrograms .program .program1Pic {
+  background: url('../images/header/americanFootball2.jpg');
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.ourPrograms .program .program2Pic {
+  background: url('../images/dude/china2.jpg');
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.ourPrograms .program .program3Pic {
+  background: url('../images/dude/australia1.png');
+  -webkit-background-size: cover;
+          background-size: cover;
+}

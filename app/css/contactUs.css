@@ -25,11 +25,14 @@
   z-index: 99999;
 }
 .contactUs .cheerUp .cheerUp-Content button {
-  background: #BF360C;
+  background: url("../images/our-programs/travel.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
   display: block;
   font-size: 30px;
-  width: 130px;
-  height: 130px;
+  width: 230px;
+  height: 230px;
   border: 2px solid transparent;
   cursor: pointer;
   color: white;
@@ -47,8 +50,9 @@
   transition: 1s ease-in-out;
 }
 .contactUs .cheerUp .cheerUp-Content button p {
-  margin-top: 20px;
+  margin-top: 30px;
   line-height: 25px;
+  padding-left: 10px;
 }
 .contactUs .cheerUp .cheerUp-Content button p a {
   text-decoration: none;

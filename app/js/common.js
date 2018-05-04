@@ -1,19 +1,9 @@
 $(document).ready(function(){
-    // $(".owl-carousel").owlCarousel();
-    // var owl = $('.owl-carousel');
-    // owl.owlCarousel({
-    //     items:2,
-    //     loop:true,
-    //     margin:10,
-    //     autoplay:true,
-    //     autoplayTimeout:1000,
-    //     autoplayHoverPause:false
-    // });
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
-        autoplay:true,
-        autoplayTimeout:1000,
+        //autoplay:true,
+        autoplayTimeout:2000,
         autoplayHoverPause:false,
         responsiveClass:true,
         responsive:{
@@ -58,39 +48,39 @@ let bolita3 = document.getElementById('bolita3');
     
 // };
 
-let myDes = document.getElementById('posibilitiesInfoDescription');
-let defDes = document.getElementById('definitioninfoDescription');
-let factorDes = document.getElementById('factorInfoDescription');
+// let myDes = document.getElementById('posibilitiesInfoDescription');
+// let defDes = document.getElementById('definitioninfoDescription');
+// let factorDes = document.getElementById('factorInfoDescription');
 
-bolita1.onmouseover = function(){
-    myDes.style.display="block";
-};
-bolita1.onmouseout = function(){
-    myDes.style.display = 'none';
-};
-bolita1.onclick = function(){
-    showit('#posibilitiesInfoDescription');
-};
+// bolita1.onmouseover = function(){
+//     myDes.style.display="block";
+// };
+// bolita1.onmouseout = function(){
+//     myDes.style.display = 'none';
+// };
+// bolita1.onclick = function(){
+//     showit('#posibilitiesInfoDescription');
+// };
 
-bolita2.onmouseover = function(){
-    defDes.style.display="block";
-};
-bolita2.onmouseout = function(){
-    defDes.style.display = 'none';
-};
-bolita2.onclick = function(){
-    showit('#definitioninfoDescription');
-};
+// bolita2.onmouseover = function(){
+//     defDes.style.display="block";
+// };
+// bolita2.onmouseout = function(){
+//     defDes.style.display = 'none';
+// };
+// bolita2.onclick = function(){
+//     showit('#definitioninfoDescription');
+// };
 
-bolita3.onmouseover = function(){
-    factorDes.style.display="block";
-};
-bolita3.onmouseout = function(){
-    factorDes.style.display = 'none';
-};
-bolita3.onclick = function(){
-    showit('#factorInfoDescription');
-};
+// bolita3.onmouseover = function(){
+//     factorDes.style.display="block";
+// };
+// bolita3.onmouseout = function(){
+//     factorDes.style.display = 'none';
+// };
+// bolita3.onclick = function(){
+//     showit('#factorInfoDescription');
+// };
 
 
 

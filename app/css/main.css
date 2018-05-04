@@ -5,18 +5,18 @@ header {
           background-size: cover;
   height: 100vh;
   position: relative;
-  z-index: 9999;
 }
 header .container-fluid {
-  z-index: 2;
+  z-index: 1;
   padding-left: 0px;
   padding-right: 0px;
 }
 header .container-fluid .banner {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 header .container-fluid .navbar {
+  position: absolute;
   background: rgba(31, 31, 39, 0.5);
   padding: 0;
   width: 100%;
@@ -72,23 +72,102 @@ header .container-fluid .navbar .navbar-collapse .navbar-nav .nav-item .dropdown
   background-color: rgba(31, 31, 39, 0.5);
 }
 header .container-fluid .header-content {
-  padding-top: 50px;
-  margin-right: 0px;
+  background: red;
+  height: 100vh;
 }
-header .container-fluid .header-content .header-content-img {
-  padding-right: 0px;
+header .container-fluid .header-content .theOne,
+header .container-fluid .header-content .theTwo,
+header .container-fluid .header-content .theThree {
+  padding-top: 200px;
 }
-header .container-fluid .header-content .header-content-img img {
-  margin-bottom: 0;
+header .container-fluid .header-content .theOne p,
+header .container-fluid .header-content .theTwo p,
+header .container-fluid .header-content .theThree p {
+  font-size: 150px;
+  font-weight: bolder;
+  color: snow;
 }
-header .container-fluid .header-content .header-content-info h3 {
+header .container-fluid .header-content .owl-carousel {
+  height: 100%;
+}
+header .container-fluid .header-content .theOne {
+  background-image: url("../images/our-programs/4-guys-china.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+header .container-fluid .header-content .theOne .ind-banner {
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+header .container-fluid .header-content .theOne img {
+  width: 20%;
+  margin: auto;
+  position: absolute;
+  z-index: 2;
+  left: 40%;
+}
+header .container-fluid .header-content .theOne .country-name {
+  position: absolute;
+  z-index: 2;
+  left: 38%;
+  bottom: 50px;
+}
+header .container-fluid .header-content .theTwo {
+  background-image: url("../images/dude/australia1.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+header .container-fluid .header-content .theThree {
+  background: url('../images/header/americanFootball2.jpg');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+header .container-fluid .header-content .theThree .ind-banner {
+  background: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+header .container-fluid .header-content .theThree img {
+  width: 20%;
+  margin: auto;
+  position: absolute;
+  z-index: 2;
+  left: 40%;
+}
+header .container-fluid .header-content .theThree .l-r-main {
+  position: absolute;
+  z-index: 2;
+  left: 29%;
+  bottom: 100px;
+}
+header .container-fluid .header-content .theThree .l-r-main h3 {
+  font-size: 70px;
+  color: snow;
+}
+header .container-fluid .header-content .theThree .l-r-main p {
+  font-size: 35px;
   color: white;
-  font-size: 45px;
-  margin-top: 20px;
 }
-header .container-fluid .header-content .header-content-info p {
-  color: white;
-  font-size: 20px;
+header .container-fluid .header-content .owl-dots {
+  position: absolute;
+  bottom: 50px;
+  left: 49%;
 }
 @media (max-width: 576px) {
   header {
@@ -202,8 +281,16 @@ header .container-fluid .header-content .header-content-info p {
     font-size: 10px;
   }
 }
+.ofToUsa {
+  background: red;
+  height: auto;
+}
+.ofToUsa .navbar {
+  width: 100%;
+  position: absolute;
+}
 .informationOut {
-  padding: 0px 0px;
+  padding-top: 100px;
   background: red;
   background: url('../images/sports/tennis-back.jpg') center;
   -webkit-background-size: cover;
@@ -371,7 +458,6 @@ header .container-fluid .header-content .header-content-info p {
   color: white;
 }
 .becas .row .posibilities .row .posibilitiesInfo #posibilitiesInfoDescription {
-  display: none;
   color: white;
 }
 .becas .row .definition {
@@ -405,7 +491,6 @@ header .container-fluid .header-content .header-content-info p {
 }
 .becas .row .definition .row .definitionInfo #definitioninfoDescription {
   color: white;
-  display: none;
 }
 .becas .row .factors {
   -webkit-border-radius: 24px;
@@ -439,7 +524,6 @@ header .container-fluid .header-content .header-content-info p {
 }
 .becas .row .factors .row .factorsInfo #factorInfoDescription {
   color: white;
-  display: none;
 }
 .becas .row .ballon {
   display: -webkit-box;
@@ -492,11 +576,14 @@ header .container-fluid .header-content .header-content-info p {
   z-index: 99999;
 }
 .contactUs .cheerUp .cheerUp-Content button {
-  background: #BF360C;
+  background: url("../images/our-programs/travel.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
   display: block;
   font-size: 30px;
-  width: 130px;
-  height: 130px;
+  width: 230px;
+  height: 230px;
   border: 2px solid transparent;
   cursor: pointer;
   color: white;
@@ -514,8 +601,9 @@ header .container-fluid .header-content .header-content-info p {
   transition: 1s ease-in-out;
 }
 .contactUs .cheerUp .cheerUp-Content button p {
-  margin-top: 20px;
+  margin-top: 30px;
   line-height: 25px;
+  padding-left: 10px;
 }
 .contactUs .cheerUp .cheerUp-Content button p a {
   text-decoration: none;
@@ -625,8 +713,10 @@ header .container-fluid .header-content .header-content-info p {
 .ofProcess .container-fluid {
   padding: 0 0;
 }
+.process {
+  padding-top: 100px;
+}
 .process .processInfo {
-  padding-top: 0px;
   padding-bottom: 0px;
 }
 .process .processInfo h2 {
@@ -722,7 +812,7 @@ header .container-fluid .header-content .header-content-info p {
   background: red;
 }
 footer {
-  background: url('../images/basket-net.jpg');
+  background: url("../images/our-programs/sit-backpack.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -745,6 +835,9 @@ footer .firstBlock p i {
 footer .beInTouch {
   text-align: center;
 }
+footer .beInTouch h4 {
+  font-size: 50px;
+}
 footer .beInTouch ul {
   list-style: none;
   padding: 0;
@@ -766,6 +859,9 @@ footer .beInTouch ul li:before {
 footer .followUs {
   text-align: center;
 }
+footer .followUs h4 {
+  font-size: 40px;
+}
 footer .followUs ul {
   list-style: none;
   display: -webkit-box;
@@ -783,8 +879,9 @@ footer .followUs ul li {
 }
 footer .followUs ul li i {
   cursor: pointer;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   padding: 10px 15px;
+  font-size: 30px;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -806,7 +903,7 @@ footer .footerBanner {
   position: absolute;
   left: 0;
   top: 0;
-  background: rgba(31, 31, 39, 0.3);
+  background: rgba(31, 31, 39, 0.6);
   width: 100%;
   height: 100%;
 }
@@ -873,6 +970,129 @@ footer .toUp {
       bottom: 0px;
     }
   }
+}
+.ourPrograms {
+  margin-top: -100px;
+  padding-bottom: 50px;
+}
+.ourPrograms .program {
+  text-align: center;
+}
+.ourPrograms .program .the-city-name {
+  margin-top: 20px;
+}
+.ourPrograms .program .the-city-name p {
+  width: 140px;
+  font-size: 30px;
+  display: inline-block;
+  border-bottom: 4px solid #ff5123;
+}
+.ourPrograms .program .programPic {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  background: orange;
+  -webkit-background-size: cover;
+          background-size: cover;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 40px 2px #fff;
+          box-shadow: 0px 0px 40px 2px #fff;
+}
+.ourPrograms .program .programPic::before {
+  content: "apply";
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  padding-top: 35%;
+  font-size: 50px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  left: -100%;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.ourPrograms .program .programPic:hover::before {
+  cursor: pointer;
+  left: 0px;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.ourPrograms .program .program1Pic {
+  background: url('../images/header/americanFootball2.jpg');
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.ourPrograms .program .program2Pic {
+  background: url('../images/dude/china2.jpg');
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.ourPrograms .program .program3Pic {
+  background: url('../images/dude/australia1.png');
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.the-mission {
+  background: url("../images/our-programs/guys-back.jpg");
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  position: relative;
+}
+.the-mission .my-blur {
+  background: rgba(0, 0, 0, 0.35);
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.the-mission .row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.the-mission .row .header-mission {
+  z-index: 2;
+}
+.the-mission .row .header-mission h1 {
+  display: inline;
+  padding: 10px 25px;
+  border-bottom: 5px solid #ff5123;
+  color: white;
+  font-size: 50px;
+}
+.the-mission .row .info-mission {
+  padding: 15px;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  border: 9px solid #ff5123;
+  -webkit-border-radius: 14px;
+          border-radius: 14px;
+  color: white;
+  z-index: 2;
+}
+.the-mission .row .info-mission p {
+  font-size: 25px;
 }
 body {
   font-family: 'Roboto Condensed';

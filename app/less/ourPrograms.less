@@ -1,0 +1,67 @@
+.ourPrograms{
+    // padding-top: 150px;
+    margin-top: -100px;
+    padding-bottom: 50px;
+    .program{
+        text-align: center;
+        // background: orange;
+        // padding-bottom: 30px;
+        .the-city-name{
+            margin-top: 20px;
+            p{
+                // margin-top: 20px;
+                // background: yellow;
+                width: 140px;
+                // padding: 5px 15px;
+                font-size: 30px;
+                display: inline-block;
+                border-bottom: 4px solid rgb(255, 81, 35);
+            }
+        }
+        .programPic{
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            // background: url('../images/header/americanFootball2.jpg');
+            background: orange;
+            background-size: cover;
+            border-radius: 50%;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0px 0px 40px 2px #fff;
+            &::before{
+                content: "apply";
+                background: rgba(0, 0, 0, .5);
+                color: white;
+                position: absolute;
+                width: inherit;
+                height: inherit;
+                padding-top: 50% - 15px;
+                font-size: 50px;
+                border-radius: 50%;
+                left: -100%;
+                transition: .5s ease-in-out;
+            }
+            &:hover::before{
+                cursor: pointer;
+                left: 0px;
+                // display: block;
+                transition: .5s ease-in-out;
+            }
+        }
+        .program1Pic{
+            background: url('../images/header/americanFootball2.jpg');            
+            background-size: cover;            
+        }
+        .program2Pic{
+            background: url('../images/dude/china2.jpg');  
+            background-position: center;          
+            background-size: cover; 
+        }
+        .program3Pic{
+            background: url('../images/dude/australia1.png');            
+            background-size: cover; 
+        }
+    }
+}

@@ -5,19 +5,20 @@ header{
     background-size: cover;
     height: 100vh;
     position: relative;
-    z-index: 9999;
+    // z-index: 9999;
     
     .container-fluid{
-        z-index: 2;
+        z-index: 1;
         padding-left: 0px;
         padding-right: 0px;
         .banner{
-            background: rgba(0, 0, 0, .1);
+            background: rgba(0, 0, 0, .5);
             z-index: 0;
         }
 
         .navbar{
-            background: rgba(31, 31, 39, .5);            
+            position: absolute;
+            background: rgba(31, 31, 39, .5);  
             padding: 0;
             width: 100%;
             z-index: 9999;
@@ -72,25 +73,120 @@ header{
             }
         }
             .header-content{
-                padding-top: 50px;
-                margin-right: 0px;
-                .header-content-img{
-                    padding-right: 0px;
-                    img{
-                        margin-bottom: 0;                    
-                    }
-                }
-                .header-content-info{
-                    h3{
-                        color: white;
-                        font-size: 45px;
-                        margin-top: 20px;
-                    }
-                    p{
-                        color: white;
-                        font-size: 20px;
-                    }
-                }
+                // padding-top: 50px;
+                // margin-right: 0px;
+                // .header-content-img{
+                //     padding-right: 0px;
+                //     img{
+                //         margin-bottom: 0;                    
+                //     }
+                // }
+                // .header-content-info{
+                //     h3{
+                //         color: white;
+                //         font-size: 45px;
+                //         margin-top: 20px;
+                //     }
+                //     p{
+                //         color: white;
+                //         font-size: 20px;
+                //     }
+                // }
+                background: red;
+    height: 100vh;
+    // position: relative;
+    .theOne, .theTwo, .theThree{
+        padding-top: 200px;
+        p{
+            font-size: 150px;
+            font-weight: bolder;
+            color: snow;
+        }
+    }
+    .owl-carousel{
+        height: 100%;
+    }
+    .theOne{
+        background-image: url("../images/our-programs/4-guys-china.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        text-align: center;
+        .ind-banner{
+            background: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+        }
+        img{
+            width: 20%;
+            margin: auto;
+            position: absolute;
+            z-index: 2;
+            left: 50% - 10px;
+        }
+        .country-name{
+            position: absolute;
+            z-index: 2;
+            left: 50% - 12px;
+            bottom: 50px;
+        }
+    }
+    .theTwo{
+        background-image: url("../images/dude/australia1.png");
+        background-repeat: no-repeat;
+        background-size: cover;                
+        height: 100vh;           
+        text-align: center;
+        
+        
+    }
+    .theThree{
+        background: url('../images/header/americanFootball2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;                
+        height: 100vh;               
+        text-align: center;
+        .ind-banner{
+            background: rgba(0, 0, 0, 0.35);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+        }
+        img{
+            width: 20%;
+            margin: auto;
+            position: absolute;
+            z-index: 2;
+            left: 50% - 10px;
+        }
+        .l-r-main{
+            position: absolute;
+            z-index: 2;
+            // background: red;
+            left: 50% - 21px;
+            bottom: 100px;
+            h3{
+                font-size: 70px;
+                color: snow;
+            }
+            p{
+                font-size: 35px;
+                color: white;
+            }
+        }
+    }
+    .owl-dots{
+        // background: green;
+        position: absolute;
+        bottom: 50px;
+        left: 50% - 1px;
+        // display: none;
+    }
             }
     }
 }
@@ -124,6 +220,7 @@ header{
                     // background: red;
                     padding-right: 0px;
                 }
+                
             }
         }
 

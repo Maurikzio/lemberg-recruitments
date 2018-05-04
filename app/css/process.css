@@ -9,8 +9,10 @@
 .ofProcess .container-fluid {
   padding: 0 0;
 }
+.process {
+  padding-top: 100px;
+}
 .process .processInfo {
-  padding-top: 0px;
   padding-bottom: 0px;
 }
 .process .processInfo h2 {

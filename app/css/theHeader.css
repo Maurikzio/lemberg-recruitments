@@ -5,18 +5,18 @@ header {
           background-size: cover;
   height: 100vh;
   position: relative;
-  z-index: 9999;
 }
 header .container-fluid {
-  z-index: 2;
+  z-index: 1;
   padding-left: 0px;
   padding-right: 0px;
 }
 header .container-fluid .banner {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 header .container-fluid .navbar {
+  position: absolute;
   background: rgba(31, 31, 39, 0.5);
   padding: 0;
   width: 100%;
@@ -72,23 +72,102 @@ header .container-fluid .navbar .navbar-collapse .navbar-nav .nav-item .dropdown
   background-color: rgba(31, 31, 39, 0.5);
 }
 header .container-fluid .header-content {
-  padding-top: 50px;
-  margin-right: 0px;
+  background: red;
+  height: 100vh;
 }
-header .container-fluid .header-content .header-content-img {
-  padding-right: 0px;
+header .container-fluid .header-content .theOne,
+header .container-fluid .header-content .theTwo,
+header .container-fluid .header-content .theThree {
+  padding-top: 200px;
 }
-header .container-fluid .header-content .header-content-img img {
-  margin-bottom: 0;
+header .container-fluid .header-content .theOne p,
+header .container-fluid .header-content .theTwo p,
+header .container-fluid .header-content .theThree p {
+  font-size: 150px;
+  font-weight: bolder;
+  color: snow;
 }
-header .container-fluid .header-content .header-content-info h3 {
+header .container-fluid .header-content .owl-carousel {
+  height: 100%;
+}
+header .container-fluid .header-content .theOne {
+  background-image: url("../images/our-programs/4-guys-china.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+header .container-fluid .header-content .theOne .ind-banner {
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+header .container-fluid .header-content .theOne img {
+  width: 20%;
+  margin: auto;
+  position: absolute;
+  z-index: 2;
+  left: 40%;
+}
+header .container-fluid .header-content .theOne .country-name {
+  position: absolute;
+  z-index: 2;
+  left: 38%;
+  bottom: 50px;
+}
+header .container-fluid .header-content .theTwo {
+  background-image: url("../images/dude/australia1.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+header .container-fluid .header-content .theThree {
+  background: url('../images/header/americanFootball2.jpg');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+header .container-fluid .header-content .theThree .ind-banner {
+  background: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+header .container-fluid .header-content .theThree img {
+  width: 20%;
+  margin: auto;
+  position: absolute;
+  z-index: 2;
+  left: 40%;
+}
+header .container-fluid .header-content .theThree .l-r-main {
+  position: absolute;
+  z-index: 2;
+  left: 29%;
+  bottom: 100px;
+}
+header .container-fluid .header-content .theThree .l-r-main h3 {
+  font-size: 70px;
+  color: snow;
+}
+header .container-fluid .header-content .theThree .l-r-main p {
+  font-size: 35px;
   color: white;
-  font-size: 45px;
-  margin-top: 20px;
 }
-header .container-fluid .header-content .header-content-info p {
-  color: white;
-  font-size: 20px;
+header .container-fluid .header-content .owl-dots {
+  position: absolute;
+  bottom: 50px;
+  left: 49%;
 }
 @media (max-width: 576px) {
   header {

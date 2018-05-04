@@ -1,5 +1,13 @@
+.ofToUsa {
+  background: red;
+  height: auto;
+}
+.ofToUsa .navbar {
+  width: 100%;
+  position: absolute;
+}
 .informationOut {
-  padding: 0px 0px;
+  padding-top: 100px;
   background: red;
   background: url('../images/sports/tennis-back.jpg') center;
   -webkit-background-size: cover;
