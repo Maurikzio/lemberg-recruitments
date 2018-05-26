@@ -78,7 +78,7 @@ header .container-fluid .header-content {
 header .container-fluid .header-content .theOne,
 header .container-fluid .header-content .theTwo,
 header .container-fluid .header-content .theThree {
-  padding-top: 200px;
+  padding-top: 150px;
 }
 header .container-fluid .header-content .theOne p,
 header .container-fluid .header-content .theTwo p,
@@ -87,8 +87,14 @@ header .container-fluid .header-content .theThree p {
   font-weight: bolder;
   color: snow;
 }
+header .container-fluid .header-content .theOne img,
+header .container-fluid .header-content .theTwo img,
+header .container-fluid .header-content .theThree img {
+  top: 100px;
+}
 header .container-fluid .header-content .owl-carousel {
   height: 100%;
+  background: black;
 }
 header .container-fluid .header-content .theOne {
   background-image: url("../images/our-programs/4-guys-china.png");
@@ -107,17 +113,17 @@ header .container-fluid .header-content .theOne .ind-banner {
   z-index: 1;
 }
 header .container-fluid .header-content .theOne img {
-  width: 20%;
+  width: 30%;
   margin: auto;
   position: absolute;
   z-index: 2;
-  left: 40%;
+  left: 37%;
 }
 header .container-fluid .header-content .theOne .country-name {
   position: absolute;
   z-index: 2;
-  left: 38%;
-  bottom: 50px;
+  left: 40%;
+  bottom: 20px;
 }
 header .container-fluid .header-content .theTwo {
   background-image: url("../images/dude/australia1.png");
@@ -126,6 +132,19 @@ header .container-fluid .header-content .theTwo {
           background-size: cover;
   height: 100vh;
   text-align: center;
+}
+header .container-fluid .header-content .theTwo img {
+  width: 30%;
+  margin: auto;
+  position: absolute;
+  z-index: 2;
+  left: 37%;
+}
+header .container-fluid .header-content .theTwo .country-name {
+  position: absolute;
+  z-index: 2;
+  left: 35%;
+  bottom: 20px;
 }
 header .container-fluid .header-content .theThree {
   background: url('../images/header/americanFootball2.jpg');
@@ -144,30 +163,27 @@ header .container-fluid .header-content .theThree .ind-banner {
   z-index: 1;
 }
 header .container-fluid .header-content .theThree img {
-  width: 20%;
+  width: 30%;
   margin: auto;
   position: absolute;
   z-index: 2;
-  left: 40%;
+  left: 37%;
 }
-header .container-fluid .header-content .theThree .l-r-main {
+header .container-fluid .header-content .theThree .country-name {
   position: absolute;
   z-index: 2;
-  left: 29%;
-  bottom: 100px;
-}
-header .container-fluid .header-content .theThree .l-r-main h3 {
-  font-size: 70px;
-  color: snow;
-}
-header .container-fluid .header-content .theThree .l-r-main p {
-  font-size: 35px;
-  color: white;
+  left: 43%;
+  bottom: 20px;
 }
 header .container-fluid .header-content .owl-dots {
   position: absolute;
   bottom: 50px;
   left: 49%;
+}
+@media (max-width: 1400px) {
+  header {
+    background: green;
+  }
 }
 @media (max-width: 576px) {
   header {
@@ -179,19 +195,56 @@ header .container-fluid .header-content .owl-dots {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(265, 265, 265, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     cursor: pointer;
   }
-  header .container-fluid .header-content {
-    padding-top: 100px;
+  header .container-fluid .header-content .theOne p,
+  header .container-fluid .header-content .theTwo p,
+  header .container-fluid .header-content .theThree p {
+    font-size: 80px;
+    font-weight: bolder;
+    color: snow;
   }
-  header .container-fluid .header-content .header-content-img img {
-    width: 50%;
+  header .container-fluid .header-content .theOne img,
+  header .container-fluid .header-content .theTwo img,
+  header .container-fluid .header-content .theThree img {
+    top: 100px;
   }
-  header .container-fluid .header-content .header-content-info {
-    padding-right: 0px;
+  header .container-fluid .header-content .theOne img {
+    width: 80%;
+    left: 13%;
+  }
+  header .container-fluid .header-content .theOne .country-name {
+    width: 100%;
+    left: 0px;
+    bottom: 60px;
+    text-align: center;
+  }
+  header .container-fluid .header-content .theTwo img {
+    width: 80%;
+    left: 13%;
+  }
+  header .container-fluid .header-content .theTwo .country-name {
+    width: 100%;
+    left: 0px;
+    bottom: 60px;
+    text-align: center;
+  }
+  header .container-fluid .header-content .theThree img {
+    width: 80%;
+    left: 13%;
+  }
+  header .container-fluid .header-content .theThree .country-name {
+    width: 100%;
+    left: 0px;
+    bottom: 60px;
+    text-align: center;
+  }
+  header .container-fluid .header-content .owl-dots {
+    position: absolute;
+    bottom: 50px;
+    left: 38%;
   }
 }
 .ofIntro {
-  background: none;
-  height: auto;
+  height: 100%;
 }
 .ofIntro .navbar {
   width: 100%;
@@ -202,8 +255,8 @@ header .container-fluid .header-content .owl-dots {
 }
 .ofIntro .introRow .theIntroduction {
   background: url('../images/tennis1.jpg') center no-repeat;
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-attachment: fixed;
   text-align: center;
   color: white;
@@ -262,23 +315,10 @@ header .container-fluid .header-content .owl-dots {
   z-index: 1;
 }
 @media (max-width: 576px) {
-  .introduction .introductionContent .introductionInfo {
-    padding-top: 0px;
-  }
-  .introduction .introductionContent .introductionInfo .theIntro h1 {
-    font-size: 20px;
-  }
-  .introduction .introductionContent .introductionInfo .theIntro p {
-    line-height: 15px;
-  }
-  .introduction .introductionContent .introductionInfo .theMission h2 {
-    font-size: 20px;
-  }
-  .introduction .introductionContent .introductionInfo .theMission p {
-    line-height: 15px;
-  }
-  .introduction .introductionContent .introductionInfo p {
-    font-size: 10px;
+  .ofIntro .introRow .theIntroduction {
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 0px;
   }
 }
 .ofToUsa {
@@ -378,20 +418,40 @@ header .container-fluid .header-content .owl-dots {
   padding-top: 25px;
 }
 @media (max-width: 576px) {
+  .informationOut {
+    padding-top: 50px;
+  }
+  .informationOut .informationIn {
+    padding-top: 5px;
+  }
+  .informationOut .informationIn .row .whyStudy {
+    padding: 0px;
+  }
+  .informationOut .informationIn .row .whyStudy .whyStudy-explanation {
+    width: 100%;
+  }
+  .informationOut .informationIn .row .advantages {
+    padding: 0px;
+  }
+  .informationOut .informationIn .row .advantages ul {
+    width: 100%;
+  }
   .informationOut .sports .sportsList ul {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 5px;
   }
   .informationOut .sports .sportsList ul li .sportImg {
+    padding-left: 15px;
     text-align: center;
   }
   .informationOut .sports .sportsList ul li .sportImg img {
-    padding-left: 15px;
+    padding-left: 0px;
+    margin: auto;
   }
   .informationOut .sports .sportsList ul li .sportName {
-    padding-left: 15px;
+    padding-left: 0px;
     padding-top: 0px;
     text-align: center;
+    margin: auto;
   }
   .informationOut .sports .sportsList ul li .sportName h3 {
     font-size: 16px;
@@ -856,6 +916,10 @@ footer .beInTouch ul li:before {
   font-family: 'fontawesome';
   font-size: 18px;
 }
+footer .beInTouch #map {
+  height: 500px;
+  display: none;
+}
 footer .followUs {
   text-align: center;
 }
@@ -1041,6 +1105,15 @@ footer .toUp {
   -webkit-background-size: cover;
           background-size: cover;
 }
+@media (max-width: 576px) {
+  .ourPrograms .program .the-city-name {
+    margin-top: 0px;
+  }
+  .ourPrograms .program .programPic {
+    width: 170px;
+    height: 170px;
+  }
+}
 .the-mission {
   background: url("../images/our-programs/guys-back.jpg");
   background-position: center;
@@ -1093,6 +1166,229 @@ footer .toUp {
 }
 .the-mission .row .info-mission p {
   font-size: 25px;
+}
+@media (max-width: 576px) {
+  .the-mission {
+    padding-top: 10px;
+    padding-bottom: 200px;
+  }
+  .the-mission .row .info-mission {
+    padding: 0px;
+    width: 95%;
+    border: 3px solid #ff5123;
+  }
+  .the-mission .row .info-mission p {
+    font-size: 20px;
+  }
+}
+.ofSchollarship {
+  background: red;
+  height: auto;
+}
+.ofSchollarship .navbar {
+  width: 100%;
+  position: absolute;
+}
+.becas {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  font-weight: 200;
+  color: #0c2335;
+  background: url('../images/tennis-pole.jpg') center no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.becas .bannerBecas {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.becas .row {
+  text-align: center;
+}
+.becas .row .becasHeader h2 {
+  font-weight: 200;
+  font-size: 50px;
+  color: white;
+}
+.becas .row .posibilities {
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+}
+.becas .row .posibilities .row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.becas .row .posibilities .row .ballon1 {
+  padding-top: 10px;
+  -webkit-border-top-left-radius: 24px;
+          border-top-left-radius: 24px;
+  -webkit-border-bottom-left-radius: 24px;
+          border-bottom-left-radius: 24px;
+}
+.becas .row .posibilities .row .posibilitiesInfo {
+  color: black;
+  font-weight: 400;
+  -webkit-border-top-right-radius: 24px;
+          border-top-right-radius: 24px;
+  -webkit-border-bottom-right-radius: 24px;
+          border-bottom-right-radius: 24px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.becas .row .posibilities .row .posibilitiesInfo h3 {
+  font-weight: 200;
+  color: white;
+}
+.becas .row .posibilities .row .posibilitiesInfo #posibilitiesInfoDescription {
+  color: white;
+}
+.becas .row .definition {
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+}
+.becas .row .definition .row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.becas .row .definition .row .ballon2 i {
+  padding: 30px 25px;
+}
+.becas .row .definition .row .definitionInfo {
+  color: black;
+  font-weight: 400;
+  -webkit-border-top-right-radius: 24px;
+          border-top-right-radius: 24px;
+  -webkit-border-bottom-right-radius: 24px;
+          border-bottom-right-radius: 24px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.becas .row .definition .row .definitionInfo h3 {
+  font-weight: 200;
+  color: white;
+}
+.becas .row .definition .row .definitionInfo #definitioninfoDescription {
+  color: white;
+}
+.becas .row .factors {
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+}
+.becas .row .factors .row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.becas .row .factors .row .ballon3 i {
+  background-color: #0c2335;
+  color: white;
+  font-weight: 200;
+}
+.becas .row .factors .row .factorsInfo {
+  color: black;
+  -webkit-border-top-right-radius: 24px;
+          border-top-right-radius: 24px;
+  -webkit-border-bottom-right-radius: 24px;
+          border-bottom-right-radius: 24px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.becas .row .factors .row .factorsInfo h3 {
+  font-weight: 200;
+  color: white;
+}
+.becas .row .factors .row .factorsInfo #factorInfoDescription {
+  color: white;
+}
+.becas .row .ballon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+.becas .row .ballon i {
+  background-color: #0c2335;
+  padding: 30px 30px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  font-size: 75px;
+  text-align: center;
+  color: white;
+}
+.ofChina {
+  background: red;
+  height: auto;
+}
+.ofChina .navbar {
+  width: 100%;
+  position: absolute;
+}
+.china-info {
+  background: url("../images/china1.jpg") center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding-top: 150px;
+  position: relative;
+}
+.china-info .china-banner {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.china-info .china-heading {
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+.china-info .china-heading h1 {
+  font-size: 60px;
+}
+.china-info .china-description {
+  font-size: 20px;
+  color: white;
+}
+@media (max-width: 576px) {
+  .china-info {
+    padding-top: 60px;
+  }
+  .china-info .china-heading h1 {
+    font-size: 50px;
+  }
+  .china-info .china-description {
+    text-align: center;
+  }
+  .china-info .china-description .requirements-list {
+    text-align: left;
+  }
 }
 body {
   font-family: 'Roboto Condensed';

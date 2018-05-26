@@ -44,7 +44,7 @@
                                 програми
                                 </a>
                                 <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Китай</a>
+                                <a class="dropdown-item" href="to-china.html">Китай</a>
                                 <a class="dropdown-item" href="to-usa.html">США</a>
                                 <!-- <a class="dropdown-item" href="#">Australia</a> -->
                                 </div>
@@ -63,20 +63,22 @@
                     <div class="owl-carousel owl-theme">
                             <div class="theOne">
                                     <div class="ind-banner"></div>
-                                    <img class="" src="images/logos/bily2.png" alt=""> 
+                                    <img class="" src="images/logos/bily.png" alt=""> 
                                     <div class="country-name">
                                         <p>China</p>
                                     </div>
                             </div>
                             <div class="theTwo">
-                                <p>Australia</p>                
+                                <img class="" src="images/logos/bily.png" alt="">                                 
+                                <div class="country-name">
+                                    <p>Australia</p>   
+                                </div>             
                             </div>
                             <div class="theThree">
                                 <div class="ind-banner"></div>
-                                <img class="" src="images/logos/bily2.png" alt="">
-                                <div class="l-r-main">
-                                    <h3>Lemberg Recruitments</h3>                                
-                                    <p>Take your academics very seriously</p>
+                                <img class="" src="images/logos/bily.png" alt="">
+                                <div class="country-name">                                
+                                    <p>USA</p>
                                 </div>                
                             </div>
                         </div>
@@ -91,7 +93,7 @@
             </div>
             <div class="info-mission">
                 <p>
-                    Програми Лемберга надають можливості у різних частинах світу для людей, які хочуть не тільки навчатися або отримати академічну стипендію, але й для людей, які хочуть знайти роботу за кордоном.
+                    Програми Lemberg Recruitments надають можливості у різних частинах світу для людей, які хочуть не тільки навчатися або отримати академічну стипендію, але й для людей, які хочуть знайти роботу за кордоном.
                     Наша місія, як компанії, полягає в тому, щоб забезпечити якісне обслуговування наших клієнтів, надаючи найкращі пропозиції. Наша мета - допомогти отримати Вам незабутній досвід і у такий спосіб допомогти  досягти своїх цілей, розширити горизонти.
                 </p>
             </div>
@@ -100,7 +102,7 @@
 
     <div class="container-fluid ourPrograms">
         <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-md-4">
                 <div class="program program1">
                     <!-- <div class="programPic program1Pic"></div> -->
                     <a href="to-usa.html" class="programPic program1Pic"></a>
@@ -109,7 +111,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4">
                 <div class="program program1">
                     <!-- <div class="programPic program1Pic"></div> -->
                     <a href="#" class="programPic program2Pic"></a>
@@ -118,7 +120,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4">
                 <div class="program program1">
                     <!-- <div class="programPic program1Pic"></div> -->
                     <a href="#" class="programPic program3Pic"></a>
@@ -198,10 +200,12 @@
             </section>
                 <div class="row">
                     <div class="col-12 firstBlock">
-                        <p><i class="fa fa-map-marker" aria-hidden="true"></i></p>                        
+                        <p id="modal-lvov"><i class="fa fa-map-marker" aria-hidden="true"></i></p>                        
                     </div>
                     <div class="col-12 beInTouch">
                         <h4>Contact Us</h4>
+                        <div id="map" class="col-12 col-md-10 animated bounceInRight"></div>
+                        
                         <ul class="row contactList">
                             <li class="col-6 col-md-12">   
                                 <p>+380633932635</p>
@@ -217,13 +221,13 @@
                     <div class="col-12 followUs py-2">
                         <h4 class="">Follow Us:</h4>
                         <ul>
-                            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                            <li><a href="https://www.facebook.com/Lemberg.Recruitments/?business_id=127439408068929&ref=bookmarks" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                             <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
                             <li><i class="fa fa-skype" aria-hidden="true"></i></li>                            
                         </ul>
                     </div>
                     <div class="col-12 theRights text-center mt-4">
-                        <p>Copyright 2017 Lemberg Recruitment, all rights reserved</p>
+                        <p>Copyright 2018 Lemberg Recruitment, all rights reserved</p>
                     </div>
                 </div>
              <button class="toUp" id="toUp" onclick="myScroll(0)">
@@ -239,6 +243,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>    
     <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>    
     <script src="js/common.js"></script>   
+
+    <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79l68_IxJ0QRvlPqDTx8TDAdNVTs6NGY&callback=initMap">
+</script>
 
 </body>
 </html>

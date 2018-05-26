@@ -1,8 +1,11 @@
+var modalLvov = document.getElementById('modal-lvov');
+var theMap = document.getElementById('map');
+
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
-        //autoplay:true,
+        autoplay:true,
         autoplayTimeout:2000,
         autoplayHoverPause:false,
         responsiveClass:true,
@@ -122,4 +125,25 @@ function slideRight(){
 function myScroll(go){
     $('HTML, BODY').animate({ scrollTop: go }, 800);
     return false;
+}
+
+modalLvov.onclick = function(){
+    theMap.style.display = 'block';
+    theMap.style.margin = 'auto';        
+    initMap(49.833861, 24.016658);
+}
+//mapa
+function initMap(lat, lng){
+    var location = {
+        lat: lat,
+        lng: lng
+    };
+    var map = new google.maps.Map(document.getElementById('map'),{
+        zoom: 18,
+        center: location
+    });
+    var marker = new google.maps.Marker({
+        position: location,
+        map: map
+    });
 }

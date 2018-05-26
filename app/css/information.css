@@ -95,20 +95,40 @@
   padding-top: 25px;
 }
 @media (max-width: 576px) {
+  .informationOut {
+    padding-top: 50px;
+  }
+  .informationOut .informationIn {
+    padding-top: 5px;
+  }
+  .informationOut .informationIn .row .whyStudy {
+    padding: 0px;
+  }
+  .informationOut .informationIn .row .whyStudy .whyStudy-explanation {
+    width: 100%;
+  }
+  .informationOut .informationIn .row .advantages {
+    padding: 0px;
+  }
+  .informationOut .informationIn .row .advantages ul {
+    width: 100%;
+  }
   .informationOut .sports .sportsList ul {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 5px;
   }
   .informationOut .sports .sportsList ul li .sportImg {
+    padding-left: 15px;
     text-align: center;
   }
   .informationOut .sports .sportsList ul li .sportImg img {
-    padding-left: 15px;
+    padding-left: 0px;
+    margin: auto;
   }
   .informationOut .sports .sportsList ul li .sportName {
-    padding-left: 15px;
+    padding-left: 0px;
     padding-top: 0px;
     text-align: center;
+    margin: auto;
   }
   .informationOut .sports .sportsList ul li .sportName h3 {
     font-size: 16px;

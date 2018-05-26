@@ -1,6 +1,5 @@
 .ofIntro {
-  background: none;
-  height: auto;
+  height: 100%;
 }
 .ofIntro .navbar {
   width: 100%;
@@ -11,8 +10,8 @@
 }
 .ofIntro .introRow .theIntroduction {
   background: url('../images/tennis1.jpg') center no-repeat;
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-attachment: fixed;
   text-align: center;
   color: white;
@@ -71,22 +70,9 @@
   z-index: 1;
 }
 @media (max-width: 576px) {
-  .introduction .introductionContent .introductionInfo {
-    padding-top: 0px;
-  }
-  .introduction .introductionContent .introductionInfo .theIntro h1 {
-    font-size: 20px;
-  }
-  .introduction .introductionContent .introductionInfo .theIntro p {
-    line-height: 15px;
-  }
-  .introduction .introductionContent .introductionInfo .theMission h2 {
-    font-size: 20px;
-  }
-  .introduction .introductionContent .introductionInfo .theMission p {
-    line-height: 15px;
-  }
-  .introduction .introductionContent .introductionInfo p {
-    font-size: 10px;
+  .ofIntro .introRow .theIntroduction {
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 0px;
   }
 }

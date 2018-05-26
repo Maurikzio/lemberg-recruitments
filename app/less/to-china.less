@@ -1,0 +1,57 @@
+.ofChina {
+    background: red;
+    height: auto;
+    .navbar{
+        // border: 1px solid red;
+        width: 100%;
+        position: absolute;
+    }
+}
+.china-info{
+    background: url("../images/china1.jpg") center;
+    background-size: cover;
+    padding-top: 150px;
+    position: relative;
+    .china-banner{
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .china-heading{
+        text-align: center;
+        color: white;
+        margin-bottom: 50px;
+        h1{
+            font-size: 60px;
+        }
+    }
+    .china-description{
+        // background: orangered;
+        font-size: 20px;
+        color: white;
+    }
+}
+
+@media (max-width: 576px){
+    .china-info{
+        padding-top: 60px;        
+        .china-banner{
+            
+        }
+        .china-heading{
+            h1{
+                // font-size: 250%;
+                font-size: 50px;
+            }
+        }  
+        .china-description{
+            text-align: center;
+            .requirements-list{
+                text-align: left;
+            }
+        }      
+    }
+}

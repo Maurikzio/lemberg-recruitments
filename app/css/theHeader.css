@@ -78,7 +78,7 @@ header .container-fluid .header-content {
 header .container-fluid .header-content .theOne,
 header .container-fluid .header-content .theTwo,
 header .container-fluid .header-content .theThree {
-  padding-top: 200px;
+  padding-top: 150px;
 }
 header .container-fluid .header-content .theOne p,
 header .container-fluid .header-content .theTwo p,
@@ -87,8 +87,14 @@ header .container-fluid .header-content .theThree p {
   font-weight: bolder;
   color: snow;
 }
+header .container-fluid .header-content .theOne img,
+header .container-fluid .header-content .theTwo img,
+header .container-fluid .header-content .theThree img {
+  top: 100px;
+}
 header .container-fluid .header-content .owl-carousel {
   height: 100%;
+  background: black;
 }
 header .container-fluid .header-content .theOne {
   background-image: url("../images/our-programs/4-guys-china.png");
@@ -107,17 +113,17 @@ header .container-fluid .header-content .theOne .ind-banner {
   z-index: 1;
 }
 header .container-fluid .header-content .theOne img {
-  width: 20%;
+  width: 30%;
   margin: auto;
   position: absolute;
   z-index: 2;
-  left: 40%;
+  left: 37%;
 }
 header .container-fluid .header-content .theOne .country-name {
   position: absolute;
   z-index: 2;
-  left: 38%;
-  bottom: 50px;
+  left: 40%;
+  bottom: 20px;
 }
 header .container-fluid .header-content .theTwo {
   background-image: url("../images/dude/australia1.png");
@@ -126,6 +132,19 @@ header .container-fluid .header-content .theTwo {
           background-size: cover;
   height: 100vh;
   text-align: center;
+}
+header .container-fluid .header-content .theTwo img {
+  width: 30%;
+  margin: auto;
+  position: absolute;
+  z-index: 2;
+  left: 37%;
+}
+header .container-fluid .header-content .theTwo .country-name {
+  position: absolute;
+  z-index: 2;
+  left: 35%;
+  bottom: 20px;
 }
 header .container-fluid .header-content .theThree {
   background: url('../images/header/americanFootball2.jpg');
@@ -144,30 +163,27 @@ header .container-fluid .header-content .theThree .ind-banner {
   z-index: 1;
 }
 header .container-fluid .header-content .theThree img {
-  width: 20%;
+  width: 30%;
   margin: auto;
   position: absolute;
   z-index: 2;
-  left: 40%;
+  left: 37%;
 }
-header .container-fluid .header-content .theThree .l-r-main {
+header .container-fluid .header-content .theThree .country-name {
   position: absolute;
   z-index: 2;
-  left: 29%;
-  bottom: 100px;
-}
-header .container-fluid .header-content .theThree .l-r-main h3 {
-  font-size: 70px;
-  color: snow;
-}
-header .container-fluid .header-content .theThree .l-r-main p {
-  font-size: 35px;
-  color: white;
+  left: 43%;
+  bottom: 20px;
 }
 header .container-fluid .header-content .owl-dots {
   position: absolute;
   bottom: 50px;
   left: 49%;
+}
+@media (max-width: 1400px) {
+  header {
+    background: green;
+  }
 }
 @media (max-width: 576px) {
   header {
@@ -179,13 +195,51 @@ header .container-fluid .header-content .owl-dots {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(265, 265, 265, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     cursor: pointer;
   }
-  header .container-fluid .header-content {
-    padding-top: 100px;
+  header .container-fluid .header-content .theOne p,
+  header .container-fluid .header-content .theTwo p,
+  header .container-fluid .header-content .theThree p {
+    font-size: 80px;
+    font-weight: bolder;
+    color: snow;
   }
-  header .container-fluid .header-content .header-content-img img {
-    width: 50%;
+  header .container-fluid .header-content .theOne img,
+  header .container-fluid .header-content .theTwo img,
+  header .container-fluid .header-content .theThree img {
+    top: 100px;
   }
-  header .container-fluid .header-content .header-content-info {
-    padding-right: 0px;
+  header .container-fluid .header-content .theOne img {
+    width: 80%;
+    left: 13%;
+  }
+  header .container-fluid .header-content .theOne .country-name {
+    width: 100%;
+    left: 0px;
+    bottom: 60px;
+    text-align: center;
+  }
+  header .container-fluid .header-content .theTwo img {
+    width: 80%;
+    left: 13%;
+  }
+  header .container-fluid .header-content .theTwo .country-name {
+    width: 100%;
+    left: 0px;
+    bottom: 60px;
+    text-align: center;
+  }
+  header .container-fluid .header-content .theThree img {
+    width: 80%;
+    left: 13%;
+  }
+  header .container-fluid .header-content .theThree .country-name {
+    width: 100%;
+    left: 0px;
+    bottom: 60px;
+    text-align: center;
+  }
+  header .container-fluid .header-content .owl-dots {
+    position: absolute;
+    bottom: 50px;
+    left: 38%;
   }
 }

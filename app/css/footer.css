@@ -43,6 +43,10 @@ footer .beInTouch ul li:before {
   font-family: 'fontawesome';
   font-size: 18px;
 }
+footer .beInTouch #map {
+  height: 500px;
+  display: none;
+}
 footer .followUs {
   text-align: center;
 }
